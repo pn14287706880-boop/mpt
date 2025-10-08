@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
-      <h1>Hello World 4</h1>
+      <h1>Hello World 5</h1>
       <p className={styles.subtitle}>
         {user ? `Welcome back, ${user.email}` : "Please sign in to get started."}
       </p>
