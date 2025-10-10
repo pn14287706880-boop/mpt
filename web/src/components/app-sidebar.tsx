@@ -61,8 +61,8 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "Playground",
-          url: "#",
+          title: "RunJob",
+          url: "/runjob",
         },
         {
           title: "History",
