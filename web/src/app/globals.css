@@ -1,18 +1,93 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --accent: #2563eb;
-  --muted: #6b7280;
-  --border: #e2e8f0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+    --primary: 215 80% 25%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 25% 27%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 15% 50%;
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 215 80% 25%;
+    --chart-1: 215 80% 25%;
+    --chart-2: 210 100% 50%;
+    --chart-3: 195 90% 45%;
+    --chart-4: 200 85% 60%;
+    --chart-5: 185 80% 55%;
+    --radius: 0.5rem;
+    --sidebar-background: 215 80% 25%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 70% 35%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 75% 30%;
+    --sidebar-ring: 210 100% 50%;
+  }
+
+  .dark {
+    --background: 215 30% 12%;
+    --foreground: 0 0% 98%;
+    --card: 215 30% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 215 30% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 215 25% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 25% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 25% 25%;
+    --input: 215 25% 25%;
+    --ring: 210 100% 50%;
+    --chart-1: 210 100% 50%;
+    --chart-2: 195 90% 45%;
+    --chart-3: 185 80% 55%;
+    --chart-4: 200 85% 60%;
+    --chart-5: 220 75% 55%;
+    --sidebar-background: 215 35% 15%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 30% 22%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 215 30% 20%;
+    --sidebar-ring: 210 100% 50%;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --muted: #9ca3af;
-    --border: #1f2937;
+@layer base {
+  * {
+    @apply border-border;
   }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -22,17 +97,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -82,11 +149,11 @@ a {
 }
 
 .site-link:hover {
-  border-color: var(--border);
+  border-color: hsl(var(--border));
 }
 
 .site-link.primary {
-  background-color: var(--accent);
+  background-color: hsl(var(--accent));
   color: #ffffff;
 }
 
@@ -95,7 +162,7 @@ a {
 }
 
 .site-user {
-  color: var(--muted);
+  color: hsl(var(--muted));
   font-size: 0.95rem;
 }
 
@@ -114,7 +181,7 @@ a {
   width: min(420px, 100%);
   padding: 2.5rem;
   border-radius: 1rem;
-  border: 1px solid var(--border);
+  border: 1px solid hsl(var(--border));
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
@@ -126,7 +193,7 @@ a {
 }
 
 .auth-subtitle {
-  color: var(--muted);
+  color: hsl(var(--muted));
   margin-bottom: 0.5rem;
 }
 
@@ -138,14 +205,14 @@ a {
 .auth-input {
   padding: 0.75rem 0.85rem;
   border-radius: 0.75rem;
-  border: 1px solid var(--border);
+  border: 1px solid hsl(var(--border));
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .auth-input:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: hsl(var(--accent));
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
 }
 
@@ -155,7 +222,7 @@ a {
   border: none;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--accent);
+  background-color: hsl(var(--accent));
   color: #ffffff;
   cursor: pointer;
   transition: opacity 0.2s ease;
@@ -173,12 +240,12 @@ a {
 
 .auth-footer {
   font-size: 0.9rem;
-  color: var(--muted);
+  color: hsl(var(--muted));
   margin-top: 0.5rem;
 }
 
 .auth-footer a {
-  color: var(--accent);
+  color: hsl(var(--accent));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -193,6 +260,6 @@ a {
 
   .auth-input {
     background-color: rgba(17, 24, 39, 0.85);
-    color: var(--foreground);
+    color: hsl(var(--foreground));
   }
 }
