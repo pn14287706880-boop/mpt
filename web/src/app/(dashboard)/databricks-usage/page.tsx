@@ -273,8 +273,18 @@ export default function DatabricksUsagePage() {
                     borderRadius: '4px',
                     padding: '8px'
                   }}
+                  wrapperStyle={{
+                    zIndex: 1000
+                  }}
                 />
-                <Legend />
+                <Legend 
+                  wrapperStyle={{
+                    backgroundColor: 'white',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    padding: '8px'
+                  }}
+                />
                 {chartData.bus.map((bu, index) => (
                   <Line
                     key={bu}
