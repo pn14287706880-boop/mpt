@@ -260,13 +260,19 @@ export default function DatabricksUsagePage() {
                   tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
                 />
                 <Tooltip 
-                  formatter={(value: number) => [
+                  formatter={(value: number, name: string) => [
                     `$${value.toLocaleString("en-US", { 
                       minimumFractionDigits: 2, 
                       maximumFractionDigits: 2 
                     })}`,
-                    "Usage Amount"
+                    name
                   ]}
+                  contentStyle={{
+                    backgroundColor: 'white',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    padding: '8px'
+                  }}
                 />
                 <Legend />
                 {chartData.bus.map((bu, index) => (
