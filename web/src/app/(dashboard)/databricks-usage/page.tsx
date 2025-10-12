@@ -120,8 +120,47 @@ export default function DatabricksUsagePage() {
       const dataPoint: { year_mon: string; [key: string]: string | number } = { year_mon: month }
       
       busToDisplay.forEach((bu) => {
-        const value = currentYearData.find((d) => d.year_mon === month && d.bu === bu)
-        dataPoint[bu] = value ? value.usage_amount : 0
+        const values = currentYearData.filter((d) => d.year_mon === month && d.bu === bu)
+        dataPoint[bu] = values.reduce((sum, v) => sum + v.usage_amount, 0)
+      })
+      
+      return dataPoint
+    })
+
+    return { data: chartDataMap, bus: busToDisplay }
+  }, [data, currentYear, selectedBU, uniqueBUs])
+
+  // Prepare cumulative chart data
+  const cumulativeChartData = useMemo(() => {
+    const currentYearData = data.filter((d) => d.year === currentYear)
+    
+    // Get all unique months for current year
+    const months = Array.from(new Set(currentYearData.map((d) => d.year_mon))).sort(
+      (a, b) => {
+        const aMonth = a.split("-")[1]
+        const bMonth = b.split("-")[1]
+        const monthOrder = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        return monthOrder.indexOf(aMonth) - monthOrder.indexOf(bMonth)
+      }
+    )
+
+    // Get BUs to display
+    const busToDisplay = selectedBU === "all" ? uniqueBUs : [selectedBU]
+
+    // Create cumulative totals for each BU
+    const cumulativeTotals: { [key: string]: number } = {}
+    busToDisplay.forEach((bu) => {
+      cumulativeTotals[bu] = 0
+    })
+
+    // Create chart data structure with cumulative values
+    const chartDataMap = months.map((month) => {
+      const dataPoint: { year_mon: string; [key: string]: string | number } = { year_mon: month }
+      
+      busToDisplay.forEach((bu) => {
+        const values = currentYearData.filter((d) => d.year_mon === month && d.bu === bu)
+        cumulativeTotals[bu] += values.reduce((sum, v) => sum + v.usage_amount, 0)
+        dataPoint[bu] = cumulativeTotals[bu]
       })
       
       return dataPoint
@@ -267,6 +306,7 @@ export default function DatabricksUsagePage() {
                     })}`,
                     name
                   ]}
+                  itemSorter={(item: { value?: number }) => -(item.value ?? 0)}
                   contentStyle={{
                     backgroundColor: 'white',
                     border: '1px solid #ccc',
@@ -286,6 +326,67 @@ export default function DatabricksUsagePage() {
                   }}
                 />
                 {chartData.bus.map((bu, index) => (
+                  <Line
+                    key={bu}
+                    type="monotone"
+                    dataKey={bu}
+                    stroke={buColors[index % buColors.length]}
+                    strokeWidth={2}
+                    dot={{ r: 4 }}
+                    activeDot={{ r: 6 }}
+                  />
+                ))}
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Cumulative Chart */}
+        <div className="rounded-lg border bg-card p-6 shadow-sm">
+          <h3 className="mb-4 text-lg font-semibold">Cumulative Usage Trend ({currentYear})</h3>
+          <div className="h-[400px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={cumulativeChartData.data}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis 
+                  dataKey="year_mon" 
+                  tick={{ fontSize: 12 }}
+                  angle={-45}
+                  textAnchor="end"
+                  height={80}
+                />
+                <YAxis 
+                  tick={{ fontSize: 12 }}
+                  tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                />
+                <Tooltip 
+                  formatter={(value: number, name: string) => [
+                    `$${value.toLocaleString("en-US", { 
+                      minimumFractionDigits: 2, 
+                      maximumFractionDigits: 2 
+                    })}`,
+                    name
+                  ]}
+                  itemSorter={(item: { value?: number }) => -(item.value ?? 0)}
+                  contentStyle={{
+                    backgroundColor: 'white',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    padding: '8px'
+                  }}
+                  wrapperStyle={{
+                    zIndex: 1000
+                  }}
+                />
+                <Legend 
+                  wrapperStyle={{
+                    backgroundColor: 'white',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    padding: '8px'
+                  }}
+                />
+                {cumulativeChartData.bus.map((bu, index) => (
                   <Line
                     key={bu}
                     type="monotone"

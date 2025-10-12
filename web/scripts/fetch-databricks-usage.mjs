@@ -26,26 +26,66 @@ async function fetchDatabricksUsage() {
       projectId: 'everyday-health-pro',
     });
 
-    // SQL Query
+    // SQL Query - Fetches current year and last year data (up to same date)
     const query = `
-      with p as (select sku_name , safe_cast(pricing_default as float64) as price from (
-      SELECT 
-        sku_name, 
-        pricing_default,
-        price_start_time, 
-        price_end_time,
-        ROW_NUMBER() OVER (PARTITION BY sku_name ORDER BY price_start_time DESC) AS rnk
-      FROM \`everyday-health-pro.BI_Reportings._any2any_db2bq_Databricks_listprices\`)
-      where rnk=1)
-      select u.year, u.year_mon, u.yyyymm, u.customTags_bu as bu, round(u.dbus * p.price,2) as usage_amount from (
-      select FORMAT_DATETIME('%Y', safe_cast(usage_date as timestamp)) AS year, 
-        FORMAT_DATETIME('%Y-%b', safe_cast(usage_date as timestamp)) AS year_mon, 
-        FORMAT_DATETIME('%Y%m', safe_cast(usage_date as timestamp)) AS yyyymm,
-        sku,coalesce(nullif(customTags_bu,''),'Undefined') as customTags_bu,
-        sum(safe_cast(dbus as float64)) dbus
-      from \`everyday-health-pro.BI_Reportings._any2any_db2bq_Databricks_usage\`
-      group by 1,2,3,4,5) u 
-      join p on u.sku=p.sku_name
+      WITH maxd AS (
+        SELECT
+          DATE(MAX(SAFE_CAST(usage_date AS TIMESTAMP))) AS max_date_this_year
+        FROM \`everyday-health-pro.BI_Reportings._any2any_db2bq_Databricks_usage\`
+        WHERE EXTRACT(YEAR FROM DATE(SAFE_CAST(usage_date AS TIMESTAMP))) = EXTRACT(YEAR FROM CURRENT_DATE())
+      ),
+      bounds AS (
+        SELECT
+          DATE_TRUNC(max_date_this_year, YEAR) AS start_cy,
+          max_date_this_year AS end_cy,
+          DATE_SUB(DATE_TRUNC(max_date_this_year, YEAR), INTERVAL 1 YEAR) AS start_ly,
+          DATE_SUB(max_date_this_year, INTERVAL 1 YEAR) AS end_ly
+        FROM maxd
+      ),
+      p AS (
+        SELECT sku_name, SAFE_CAST(pricing_default AS FLOAT64) AS price
+        FROM (
+          SELECT
+            sku_name,
+            pricing_default,
+            price_start_time,
+            price_end_time,
+            ROW_NUMBER() OVER (PARTITION BY sku_name ORDER BY price_start_time DESC) AS rnk
+          FROM \`everyday-health-pro.BI_Reportings._any2any_db2bq_Databricks_listprices\`
+        )
+        WHERE rnk = 1
+      ),
+      u AS (
+        SELECT
+          FORMAT_DATE('%Y', DATE(SAFE_CAST(usage_date AS TIMESTAMP))) AS year,
+          FORMAT_DATE('%Y-%b', DATE(SAFE_CAST(usage_date AS TIMESTAMP))) AS year_mon,
+          FORMAT_DATE('%Y%m', DATE(SAFE_CAST(usage_date AS TIMESTAMP))) AS yyyymm,
+          sku,
+          COALESCE(NULLIF(customTags_bu, ''), 'Undefined') AS customTags_bu,
+          SUM(SAFE_CAST(dbus AS FLOAT64)) AS dbus
+        FROM \`everyday-health-pro.BI_Reportings._any2any_db2bq_Databricks_usage\` t
+        CROSS JOIN bounds b
+        WHERE 
+          -- Current year data (up to max date)
+          (DATE(SAFE_CAST(usage_date AS TIMESTAMP)) BETWEEN b.start_cy AND b.end_cy)
+          OR 
+          -- Last year data (up to same date as current year max)
+          (DATE(SAFE_CAST(usage_date AS TIMESTAMP)) BETWEEN b.start_ly AND b.end_ly)
+        GROUP BY 1,2,3,4,5
+      )
+      SELECT
+        u.year,
+        u.year_mon,
+        u.yyyymm,
+        CASE
+          WHEN UPPER(u.customTags_bu) LIKE '%HEC%' THEN 'HEC'
+          WHEN UPPER(u.customTags_bu) LIKE '%DATA_SCIENCE%' THEN 'DS'
+          ELSE UPPER(u.customTags_bu)
+        END AS bu,
+        ROUND(u.dbus * p.price, 2) AS usage_amount
+      FROM u
+      JOIN p
+        ON u.sku = p.sku_name
     `;
 
     console.log('Executing BigQuery...');

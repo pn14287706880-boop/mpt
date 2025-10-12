@@ -34,7 +34,13 @@ async function fetchDatabricksUsage() {
         ROW_NUMBER() OVER (PARTITION BY sku_name ORDER BY price_start_time DESC) AS rnk
       FROM \`everyday-health-pro.BI_Reportings._any2any_db2bq_Databricks_listprices\`)
       where rnk=1)
-      select u.year, u.year_mon, u.yyyymm, u.customTags_bu as bu, round(u.dbus * p.price,2) as usage_amount from (
+      select u.year, u.year_mon, u.yyyymm, 
+      CASE 
+        WHEN UPPER(u.customTags_bu) LIKE '%HEC%' THEN 'HEC'
+        WHEN UPPER(u.customTags_bu) LIKE '%DATA_SCIENCE%' THEN 'DS'
+        ELSE UPPER(u.customTags_bu)
+      END as bu, 
+      round(u.dbus * p.price,2) as usage_amount from (
       select FORMAT_DATETIME('%Y', safe_cast(usage_date as timestamp)) AS year, 
         FORMAT_DATETIME('%Y-%b', safe_cast(usage_date as timestamp)) AS year_mon, 
         FORMAT_DATETIME('%Y%m', safe_cast(usage_date as timestamp)) AS yyyymm,
