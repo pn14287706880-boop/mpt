@@ -1,0 +1,105 @@
+#!/bin/bash
+
+# Check if commit message is provided
+if [ -z "$1" ]; then
+    echo "Error: Commit message required"
+    echo "Usage: ./ziffcommit \"your commit message\""
+    exit 1
+fi
+
+COMMIT_MESSAGE="$1"
+SOURCE_DIR="/Users/prashantnavrange/go/src/github.com/ai_dev/mpt/web"
+TARGET_DIR="/Users/prashantnavrange/go/src/github.com/mpt/mpt/web"
+GIT_REPO="/Users/prashantnavrange/go/src/github.com/mpt/mpt"
+
+# Save starting directory
+STARTING_DIR=$(pwd)
+
+echo "Starting ziffcommit process..."
+echo "================================"
+
+# Step 1: Copy/merge source to target
+echo "Step 1: Copying $SOURCE_DIR to $TARGET_DIR with merge..."
+if [ ! -d "$SOURCE_DIR" ]; then
+    echo "Error: Source directory does not exist: $SOURCE_DIR"
+    cd "$STARTING_DIR"
+    exit 1
+fi
+
+# Create target parent directory if it doesn't exist
+mkdir -p "$(dirname "$TARGET_DIR")"
+
+# Use rsync to merge directories (preserves existing files, updates changed ones)
+rsync -av --progress "$SOURCE_DIR/" "$TARGET_DIR/"
+
+if [ $? -eq 0 ]; then
+    echo "✓ Copy completed successfully"
+else
+    echo "✗ Error during copy operation"
+    cd "$STARTING_DIR"
+    exit 1
+fi
+
+# Step 2: Move to git repository
+echo ""
+echo "Step 2: Navigating to $GIT_REPO..."
+cd "$GIT_REPO" || {
+    echo "✗ Error: Cannot navigate to $GIT_REPO"
+    cd "$STARTING_DIR"
+    exit 1
+}
+echo "✓ Changed directory to $(pwd)"
+
+# Step 3: Git operations
+echo ""
+echo "Step 3: Git operations..."
+
+# Add all changes
+echo "Adding changes..."
+git add .
+
+if [ $? -ne 0 ]; then
+    echo "✗ Error: git add failed"
+    cd "$STARTING_DIR"
+    exit 1
+fi
+
+# Check if there are changes to commit
+if git diff --staged --quiet; then
+    echo "⚠ No changes to commit"
+    cd "$STARTING_DIR"
+    echo "Returned to: $(pwd)"
+    exit 0
+fi
+
+# Commit with provided message
+echo "Committing with message: $COMMIT_MESSAGE"
+git commit -m "$COMMIT_MESSAGE"
+
+if [ $? -ne 0 ]; then
+    echo "✗ Error: git commit failed"
+    cd "$STARTING_DIR"
+    exit 1
+fi
+
+# Push to GitHub
+echo "Pushing to GitHub..."
+git push
+
+if [ $? -eq 0 ]; then
+    echo "✓ Successfully pushed to GitHub"
+else
+    echo "✗ Error: git push failed"
+    cd "$STARTING_DIR"
+    exit 1
+fi
+
+# Step 4: Return to starting directory
+echo ""
+echo "Step 4: Returning to starting directory..."
+cd "$STARTING_DIR"
+echo "✓ Returned to: $(pwd)"
+
+echo ""
+echo "================================"
+echo "ziffcommit completed successfully!"

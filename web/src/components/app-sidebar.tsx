@@ -65,8 +65,8 @@ const data = {
           url: "/runjob",
         },
         {
-          title: "History",
-          url: "#",
+          title: "DatabricksUsage",
+          url: "/databricks-usage",
         },
         {
           title: "Starred",
