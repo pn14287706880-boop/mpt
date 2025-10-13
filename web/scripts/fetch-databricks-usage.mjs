@@ -2,6 +2,7 @@ import { BigQuery } from '@google-cloud/bigquery';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import os from 'os';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -10,9 +11,14 @@ async function fetchDatabricksUsage() {
   try {
     console.log('Starting BigQuery data fetch...');
 
-    // Initialize BigQuery client with service account
-    // Path: scripts/ -> web/ -> mpt/ -> ai_dev/ -> github.com/ (4 levels up from scripts)
-    const keyFilePath = path.resolve(__dirname, '../../../../everyday-health-pro.json');
+    // Detect environment and set correct path for service account key
+    const hostname = os.hostname();
+    const isProductionServer = hostname.includes("bidevlspark02");
+    
+    // Use absolute path on server, relative path in development
+    const keyFilePath = isProductionServer
+      ? "/home/go_projects/src/github.com/everyday-health-pro.json"
+      : path.resolve(__dirname, '../../../../everyday-health-pro.json');
     
     if (!fs.existsSync(keyFilePath)) {
       throw new Error(`Service account key file not found at: ${keyFilePath}`);
