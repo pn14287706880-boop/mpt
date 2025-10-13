@@ -2,6 +2,7 @@ import { NextResponse } from "next/server"
 import { exec } from "child_process"
 import { promisify } from "util"
 import path from "path"
+import os from "os"
 
 const execAsync = promisify(exec)
 
@@ -10,8 +11,14 @@ export async function POST() {
     // Get the path to the web directory
     const webDir = process.cwd()
 
-    // Navigate up from web -> mpt -> ai_dev -> github -> pro360go
-    const pro360Dir = path.resolve(webDir, "../../../pro360go")
+    // Detect environment and set correct path
+    const hostname = os.hostname()
+    const isProductionServer = hostname.includes("bidevlspark02")
+    
+    // Use absolute path on server, relative path in development
+    const pro360Dir = isProductionServer 
+      ? "/home/go_projects/src/github.com/pro360go"
+      : path.resolve(webDir, "../../../pro360go")
 
     // Command to execute
     const command = "./pro360 RefreshAny2Any any2any_db2bq_Databricks_listprices"
