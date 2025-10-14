@@ -1,9 +1,20 @@
 "use client"
 
-import { useState, useEffect, useRef, useMemo, useCallback } from "react"
+import { useState, useEffect, useMemo, type CSSProperties, useCallback } from "react"
+import {
+  DataGrid,
+  type Column,
+  type SortColumn,
+  type RenderGroupCellProps,
+  SelectColumn,
+  SELECT_COLUMN_KEY,
+  TreeDataGrid,
+  renderToggleGroup,
+} from "react-data-grid"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -12,18 +23,8 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import { AgGridReact } from "ag-grid-react"
-import type {
-  ColDef,
-  GridReadyEvent,
-  GridApi,
-  ValueFormatterParams,
-} from "ag-grid-community"
-import { ModuleRegistry, AllCommunityModule } from "ag-grid-community"
-import { RotateCcw } from "lucide-react"
-
-// Register AG Grid modules
-ModuleRegistry.registerModules([AllCommunityModule])
+import { RotateCcw, Download } from "lucide-react"
+import "react-data-grid/lib/styles.css"
 
 interface Pro360Data {
   CustomSolutionID: string
@@ -40,11 +41,32 @@ interface Pro360Data {
   nlmpv: number
 }
 
+// Number formatter
+const numberFormatter = new Intl.NumberFormat("en-US")
+
+// Custom filter function
+function getComparator(sortColumn: string) {
+  return (a: Pro360Data, b: Pro360Data) => {
+    const aValue = a[sortColumn as keyof Pro360Data]
+    const bValue = b[sortColumn as keyof Pro360Data]
+
+    if (typeof aValue === "number" && typeof bValue === "number") {
+      return aValue - bValue
+    }
+
+    return String(aValue).localeCompare(String(bValue))
+  }
+}
+
 export default function Pro360Page() {
   const [data, setData] = useState<Pro360Data[]>([])
   const [loading, setLoading] = useState(true)
-  const gridRef = useRef<AgGridReact<Pro360Data>>(null)
-  const [gridApi, setGridApi] = useState<GridApi | null>(null)
+  const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
+  const [groupByColumns, setGroupByColumns] = useState<readonly string[]>([])
+  const [selectedRows, setSelectedRows] = useState<ReadonlySet<string>>(() => new Set())
+  const [expandedGroupIds, setExpandedGroupIds] = useState<ReadonlySet<unknown>>(
+    () => new Set<unknown>()
+  )
 
   useEffect(() => {
     fetch("/data/pro360-data.json")
@@ -59,226 +81,232 @@ export default function Pro360Page() {
       })
   }, [])
 
-  // Number formatter for numeric columns
-  const numberFormatter = (params: ValueFormatterParams) => {
-    if (params.value === null || params.value === undefined) return ""
-    return params.value.toLocaleString("en-US", {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 2,
-    })
+  const groupableColumns = [
+    { key: "CustomSolutionID", name: "Custom Solution ID" },
+    { key: "TacticKey", name: "Tactic Key" },
+    { key: "CampaignNickName", name: "Campaign Nick Name" },
+    { key: "TacticType", name: "Tactic Type" },
+    { key: "yearmonth", name: "Year Month" },
+    { key: "BillingType", name: "Billing Type" },
+  ]
+
+  const toggleGroupBy = (columnKey: string) => {
+    const newGroupBy = groupByColumns.includes(columnKey)
+      ? groupByColumns.filter((key) => key !== columnKey)
+      : [...groupByColumns, columnKey]
+    setGroupByColumns(newGroupBy)
+    setExpandedGroupIds(new Set())
   }
 
-  // Column definitions with enhanced features
-  const columnDefs = useMemo<ColDef<Pro360Data>[]>(
+  // Row grouper implementation mirrors react-data-grid RowGrouping demo
+  const rowGrouper = (rows: readonly Pro360Data[], columnKey: string) => {
+    const groups: Record<string, Pro360Data[]> = {}
+    for (const row of rows) {
+      const key = String(row[columnKey as keyof Pro360Data] ?? "undefined")
+      if (!groups[key]) {
+        groups[key] = []
+      }
+      groups[key].push(row)
+    }
+    return groups
+  }
+
+  const renderGroupToggleCell = useCallback(
+    (columnKey: keyof Pro360Data) => (props: RenderGroupCellProps<Pro360Data>) => {
+      const groupColumnKey = groupByColumns[props.row.level]
+      if (groupColumnKey !== columnKey) return null
+      return renderToggleGroup({
+        ...props,
+        groupKey: `${props.groupKey} (${props.childRows.length.toLocaleString()})`,
+      })
+    },
+    [groupByColumns]
+  )
+
+  const columns = useMemo<readonly Column<Pro360Data>[]>(
     () => [
+      SelectColumn as Column<Pro360Data>,
       {
-        field: "CustomSolutionID",
-        headerName: "Custom Solution ID",
-        filter: "agTextColumnFilter",
-        sortable: true,
+        key: "CustomSolutionID",
+        name: "Custom Solution ID",
+        width: 180,
         resizable: true,
-        minWidth: 180,
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
+        sortable: true,
+        renderGroupCell: renderGroupToggleCell("CustomSolutionID"),
+      },
+      {
+        key: "TacticKey",
+        name: "Tactic Key",
+        width: 150,
+        resizable: true,
+        sortable: true,
+        renderGroupCell: renderGroupToggleCell("TacticKey"),
+      },
+      {
+        key: "CampaignNickName",
+        name: "Campaign Nick Name",
+        width: 250,
+        resizable: true,
+        sortable: true,
+        renderGroupCell: renderGroupToggleCell("CampaignNickName"),
+      },
+      {
+        key: "TacticType",
+        name: "Tactic Type",
+        width: 150,
+        resizable: true,
+        sortable: true,
+        renderGroupCell: renderGroupToggleCell("TacticType"),
+      },
+      {
+        key: "yearmonth",
+        name: "Year Month",
+        width: 120,
+        resizable: true,
+        sortable: true,
+        renderGroupCell: renderGroupToggleCell("yearmonth"),
+      },
+      {
+        key: "BillingType",
+        name: "Billing Type",
+        width: 150,
+        resizable: true,
+        sortable: true,
+        renderGroupCell: renderGroupToggleCell("BillingType"),
+      },
+      {
+        key: "lme",
+        name: "LME",
+        width: 120,
+        resizable: true,
+        sortable: true,
+        renderCell: ({ row }) => numberFormatter.format(row.lme),
+        renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
+          const total = childRows.reduce((sum, row) => sum + row.lme, 0)
+          return <strong>{numberFormatter.format(total)}</strong>
         },
       },
       {
-        field: "TacticKey",
-        headerName: "Tactic Key",
-        filter: "agTextColumnFilter",
-        sortable: true,
+        key: "nlme",
+        name: "NLME",
+        width: 120,
         resizable: true,
-        minWidth: 150,
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
+        sortable: true,
+        renderCell: ({ row }) => numberFormatter.format(row.nlme),
+        renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
+          const total = childRows.reduce((sum, row) => sum + row.nlme, 0)
+          return <strong>{numberFormatter.format(total)}</strong>
         },
       },
       {
-        field: "CampaignNickName",
-        headerName: "Campaign Nick Name",
-        filter: "agTextColumnFilter",
-        sortable: true,
+        key: "lmx",
+        name: "LMX",
+        width: 120,
         resizable: true,
-        minWidth: 250,
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
+        sortable: true,
+        renderCell: ({ row }) => numberFormatter.format(row.lmx),
+        renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
+          const total = childRows.reduce((sum, row) => sum + row.lmx, 0)
+          return <strong>{numberFormatter.format(total)}</strong>
         },
       },
       {
-        field: "TacticType",
-        headerName: "Tactic Type",
-        filter: "agTextColumnFilter",
-        sortable: true,
+        key: "nlmx",
+        name: "NLMX",
+        width: 120,
         resizable: true,
-        minWidth: 150,
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
+        sortable: true,
+        renderCell: ({ row }) => numberFormatter.format(row.nlmx),
+        renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
+          const total = childRows.reduce((sum, row) => sum + row.nlmx, 0)
+          return <strong>{numberFormatter.format(total)}</strong>
         },
       },
       {
-        field: "yearmonth",
-        headerName: "Year Month",
-        filter: "agTextColumnFilter",
-        sortable: true,
+        key: "lmpv",
+        name: "LMPV",
+        width: 120,
         resizable: true,
-        minWidth: 120,
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
+        sortable: true,
+        renderCell: ({ row }) => numberFormatter.format(row.lmpv),
+        renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
+          const total = childRows.reduce((sum, row) => sum + row.lmpv, 0)
+          return <strong>{numberFormatter.format(total)}</strong>
         },
       },
       {
-        field: "BillingType",
-        headerName: "Billing Type",
-        filter: "agTextColumnFilter",
-        sortable: true,
+        key: "nlmpv",
+        name: "NLMPV",
+        width: 120,
         resizable: true,
-        minWidth: 150,
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
-        },
-      },
-      {
-        field: "lme",
-        headerName: "LME",
-        filter: "agNumberColumnFilter",
         sortable: true,
-        resizable: true,
-        valueFormatter: numberFormatter,
-        minWidth: 120,
-        type: "numericColumn",
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
-        },
-      },
-      {
-        field: "nlme",
-        headerName: "NLME",
-        filter: "agNumberColumnFilter",
-        sortable: true,
-        resizable: true,
-        valueFormatter: numberFormatter,
-        minWidth: 120,
-        type: "numericColumn",
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
-        },
-      },
-      {
-        field: "lmx",
-        headerName: "LMX",
-        filter: "agNumberColumnFilter",
-        sortable: true,
-        resizable: true,
-        valueFormatter: numberFormatter,
-        minWidth: 120,
-        type: "numericColumn",
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
-        },
-      },
-      {
-        field: "nlmx",
-        headerName: "NLMX",
-        filter: "agNumberColumnFilter",
-        sortable: true,
-        resizable: true,
-        valueFormatter: numberFormatter,
-        minWidth: 120,
-        type: "numericColumn",
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
-        },
-      },
-      {
-        field: "lmpv",
-        headerName: "LMPV",
-        filter: "agNumberColumnFilter",
-        sortable: true,
-        resizable: true,
-        valueFormatter: numberFormatter,
-        minWidth: 120,
-        type: "numericColumn",
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
-        },
-      },
-      {
-        field: "nlmpv",
-        headerName: "NLMPV",
-        filter: "agNumberColumnFilter",
-        sortable: true,
-        resizable: true,
-        valueFormatter: numberFormatter,
-        minWidth: 120,
-        type: "numericColumn",
-        filterParams: {
-          buttons: ["reset", "apply"],
-          closeOnApply: true,
+        renderCell: ({ row }) => numberFormatter.format(row.nlmpv),
+        renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
+          const total = childRows.reduce((sum, row) => sum + row.nlmpv, 0)
+          return <strong>{numberFormatter.format(total)}</strong>
         },
       },
     ],
-    []
+    [renderGroupToggleCell]
   )
 
-  const defaultColDef = useMemo<ColDef>(
-    () => ({
-      flex: 1,
-      minWidth: 100,
-      resizable: true,
-      filter: true,
-      sortable: true,
-      floatingFilter: true,
-    }),
-    []
+  const dataColumns = useMemo(
+    () => columns.filter((column) => column.key !== SELECT_COLUMN_KEY),
+    [columns]
   )
 
-  const onGridReady = useCallback((params: GridReadyEvent) => {
-    setGridApi(params.api)
-  }, [])
+  const rowKeyGetter = (row: Pro360Data) => {
+    return `${row.CustomSolutionID}-${row.TacticKey}-${row.yearmonth}`
+  }
 
-  const clearAllFilters = useCallback(() => {
-    if (gridApi) {
-      gridApi.setFilterModel(null)
-    }
-  }, [gridApi])
+  const sortedRows = useMemo(() => {
+    if (sortColumns.length === 0) return data
 
-  const autoSizeAll = useCallback(() => {
-    if (gridApi) {
-      const allColumnIds: string[] = []
-      gridApi.getColumns()?.forEach((column) => {
-        allColumnIds.push(column.getId())
-      })
-      gridApi.autoSizeColumns(allColumnIds, false)
-    }
-  }, [gridApi])
+    return [...data].sort((a, b) => {
+      for (const sort of sortColumns) {
+        const comparator = getComparator(sort.columnKey)
+        const compResult = comparator(a, b)
+        if (compResult !== 0) {
+          return sort.direction === "ASC" ? compResult : -compResult
+        }
+      }
+      return 0
+    })
+  }, [data, sortColumns])
 
-  const exportToCSV = useCallback(() => {
-    if (gridApi) {
-      gridApi.exportDataAsCsv({
-        fileName: `pro360_data_${new Date().toISOString().split("T")[0]}.csv`,
-      })
-    }
-  }, [gridApi])
+  const clearAllFilters = () => {
+    setSortColumns([])
+    setGroupByColumns([])
+    setSelectedRows(new Set())
+    setExpandedGroupIds(new Set())
+  }
 
-  // Auto-size columns when data is loaded
-  useEffect(() => {
-    if (gridApi && data.length > 0) {
-      setTimeout(() => {
-        autoSizeAll()
-      }, 100)
-    }
-  }, [gridApi, data, autoSizeAll])
+  const exportToCSV = () => {
+    const headers = dataColumns
+      .map((col) => (typeof col.name === "string" && col.name.length > 0 ? col.name : col.key))
+      .join(",")
+    const rows = sortedRows
+      .map((row) =>
+        dataColumns
+          .map((col) => {
+            const value = row[col.key as keyof Pro360Data]
+            return typeof value === "string" && value.includes(",")
+              ? `"${value}"`
+              : value ?? ""
+          })
+          .join(",")
+      )
+      .join("\n")
+
+    const csv = `${headers}\n${rows}`
+    const blob = new Blob([csv], { type: "text/csv" })
+    const url = window.URL.createObjectURL(blob)
+    const a = document.createElement("a")
+    a.href = url
+    a.download = "pro360-data.csv"
+    a.click()
+    window.URL.revokeObjectURL(url)
+  }
 
   if (loading) {
     return (
@@ -327,24 +355,17 @@ export default function Pro360Page() {
         </div>
       </header>
 
-      <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="flex flex-1 flex-col gap-4 p-4 w-full">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold">Campaign to Date Summary</h1>
           <div className="flex gap-2">
-            <Button
-              onClick={autoSizeAll}
-              variant="outline"
-              size="sm"
-              className="gap-2"
-            >
-              Auto Size
-            </Button>
             <Button
               onClick={exportToCSV}
               variant="outline"
               size="sm"
               className="gap-2"
             >
+              <Download className="h-4 w-4" />
               Export CSV
             </Button>
             <Button
@@ -354,36 +375,97 @@ export default function Pro360Page() {
               className="gap-2"
             >
               <RotateCcw className="h-4 w-4" />
-              Reset Filters
+              Reset All
             </Button>
           </div>
         </div>
 
+        {/* Group By Controls */}
+        <div className="rounded-lg border bg-card p-4 shadow-sm">
+          <div className="mb-2 text-sm font-semibold">Group by columns:</div>
+          <div className="flex flex-wrap gap-4 text-sm">
+            {groupableColumns.map((col) => (
+              <label
+                key={col.key}
+                htmlFor={col.key}
+                className="inline-flex items-center gap-2 cursor-pointer select-none"
+              >
+                <Checkbox
+                  id={col.key}
+                  checked={groupByColumns.includes(col.key)}
+                  onCheckedChange={() => toggleGroupBy(col.key)}
+                />
+                {col.name}
+              </label>
+            ))}
+          </div>
+        </div>
+
         <div
-          className="ag-theme-alpine rounded-lg border bg-card shadow-sm"
-          style={{ height: "calc(100vh - 220px)", width: "100%" }}
+          className="pro360-grid-wrapper rounded-lg border shadow-sm bg-white"
+          style={{ height: "calc(100vh - 340px)" }}
         >
-          <AgGridReact<Pro360Data>
-            ref={gridRef}
-            rowData={data}
-            columnDefs={columnDefs}
-            defaultColDef={defaultColDef}
-            onGridReady={onGridReady}
-            animateRows={true}
-            rowSelection="multiple"
-            suppressRowClickSelection={true}
-            pagination={true}
-            paginationPageSize={50}
-            paginationPageSizeSelector={[50, 100, 200, 500, 1000]}
-            enableCellTextSelection={true}
-            ensureDomOrder={true}
-            theme="legacy"
-          />
+          {groupByColumns.length > 0 ? (
+            <TreeDataGrid
+              columns={columns}
+              rows={sortedRows}
+              rowKeyGetter={rowKeyGetter}
+              sortColumns={sortColumns}
+              onSortColumnsChange={setSortColumns}
+              groupBy={groupByColumns}
+              rowGrouper={rowGrouper}
+              expandedGroupIds={expandedGroupIds}
+              onExpandedGroupIdsChange={setExpandedGroupIds}
+              selectedRows={selectedRows}
+              onSelectedRowsChange={setSelectedRows}
+              defaultColumnOptions={{
+                resizable: true,
+                sortable: true,
+              }}
+              className="rdg-light"
+              style={{
+                height: "100%",
+                width: "100%",
+                "--rdg-background-color": "white",
+                "--rdg-header-background-color": "#f8f9fa",
+                "--rdg-row-hover-background-color": "#f1f3f5"
+              } as CSSProperties}
+            />
+          ) : (
+            <DataGrid
+              columns={columns}
+              rows={sortedRows}
+              rowKeyGetter={rowKeyGetter}
+              sortColumns={sortColumns}
+              onSortColumnsChange={setSortColumns}
+              selectedRows={selectedRows}
+              onSelectedRowsChange={setSelectedRows}
+              defaultColumnOptions={{
+                resizable: true,
+                sortable: true,
+              }}
+              className="rdg-light"
+              style={{
+                height: "100%",
+                "--rdg-background-color": "white",
+                "--rdg-header-background-color": "#f8f9fa",
+                "--rdg-row-hover-background-color": "#f1f3f5"
+              } as CSSProperties}
+            />
+          )}
         </div>
 
         <div className="flex items-center justify-between text-sm text-muted-foreground">
-          <div>Total Records: {data.length.toLocaleString()}</div>
-          <div>Use column headers to sort and filter data</div>
+          <div>
+            {groupByColumns.length > 0 ? (
+              <>
+                Grouped by: <strong>{groupByColumns.map((key) => groupableColumns.find((c) => c.key === key)?.name).join(", ")}</strong> | Total records: {data.length.toLocaleString()}
+              </>
+            ) : (
+              <>Showing {data.length.toLocaleString()} records</>
+            )}
+          </div>
+          <div>react-data-grid - High-performance data grid with grouping, sorting and resizing</div>
         </div>
       </div>
     </>

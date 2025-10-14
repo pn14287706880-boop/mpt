@@ -135,6 +135,8 @@ const SidebarProvider = React.forwardRef<
       [state, open, setOpen, isMobile, openMobile, setOpenMobile, toggleSidebar]
     )
 
+    const sidebarOffset = isMobile ? "0px" : open ? SIDEBAR_WIDTH : SIDEBAR_WIDTH_ICON
+
     return (
       <SidebarContext.Provider value={contextValue}>
         <TooltipProvider delayDuration={0}>
@@ -143,6 +145,7 @@ const SidebarProvider = React.forwardRef<
               {
                 "--sidebar-width": SIDEBAR_WIDTH,
                 "--sidebar-width-icon": SIDEBAR_WIDTH_ICON,
+                "--sidebar-offset": sidebarOffset,
                 ...style,
               } as React.CSSProperties
             }
@@ -234,13 +237,10 @@ const Sidebar = React.forwardRef<
         {/* This is what handles the sidebar gap on desktop */}
         <div
           className={cn(
-            "relative w-[--sidebar-width] bg-transparent transition-[width] duration-200 ease-linear",
-            "group-data-[collapsible=offcanvas]:w-0",
-            "group-data-[side=right]:rotate-180",
-            variant === "floating" || variant === "inset"
-              ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4))]"
-              : "group-data-[collapsible=icon]:w-[--sidebar-width-icon]"
+            "relative bg-transparent transition-[width] duration-200 ease-linear",
+            "group-data-[side=right]:rotate-180"
           )}
+          style={{ width: "0px" }}
         />
         <div
           className={cn(
@@ -327,10 +327,23 @@ SidebarRail.displayName = "SidebarRail"
 const SidebarInset = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"main">
->(({ className, ...props }, ref) => {
+>(({ className, style, ...props }, ref) => {
+  const { isMobile } = useSidebar()
+  const insetStyle = React.useMemo<React.CSSProperties>(() => {
+    const baseStyle: React.CSSProperties = { ...style }
+    if (!isMobile) {
+      baseStyle.paddingLeft = "var(--sidebar-offset)"
+      baseStyle.transition = baseStyle.transition
+        ? `${baseStyle.transition}, padding 200ms linear`
+        : "padding 200ms linear"
+    }
+    return baseStyle
+  }, [isMobile, style])
+
   return (
     <main
       ref={ref}
+      style={insetStyle}
       className={cn(
         "relative flex w-full flex-1 flex-col bg-background",
         "md:peer-data-[variant=inset]:m-2 md:peer-data-[state=collapsed]:peer-data-[variant=inset]:ml-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow",

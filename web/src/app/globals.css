@@ -266,3 +266,42 @@ a {
     color: hsl(var(--foreground));
   }
 }
+
+/* React Data Grid Custom Styling */
+.rdg {
+  --rdg-background-color: #fff;
+  --rdg-header-background-color: #f8f9fa;
+  --rdg-row-hover-background-color: #f1f3f5;
+  --rdg-border-color: #dee2e6;
+  --rdg-summary-border-color: #adb5bd;
+  --rdg-color: #212529;
+  --rdg-font-size: 14px;
+}
+
+/* Group cell styling */
+.rdg [role="gridcell"][aria-colindex="1"] {
+  background-color: #f8f9fa !important;
+}
+
+/* Make group cells more visible */
+.rdg-row[aria-level] {
+  background-color: #f8f9fa !important;
+  font-weight: 500;
+}
+
+/* Style the expand/collapse toggle */
+.rdg-row[aria-level] [role="gridcell"]:first-child {
+  cursor: pointer;
+  user-select: none;
+}
+
+.rdg-row[aria-level]:hover {
+  background-color: #e9ecef !important;
+}
+
+.rdg-group-cell-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
