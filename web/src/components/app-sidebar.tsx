@@ -56,7 +56,7 @@ const data = {
           url: "/databricks-usage",
         },
         {
-          title: "Starred",
+          title: "Pro360",
           url: "#",
         },
         {
