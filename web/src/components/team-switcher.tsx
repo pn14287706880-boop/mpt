@@ -44,7 +44,7 @@ export function TeamSwitcher({
                 <img src="/mpt-logo.png" alt="MPT Logo" className="size-full object-contain" />
               </div>
               <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-semibold">MPT</span>
+                <span className="truncate font-semibold">{activeTeam.name}</span>
               </div>
               <ChevronsUpDown className="ml-auto" />
             </SidebarMenuButton>

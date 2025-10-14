@@ -2,26 +2,11 @@
 
 import * as React from "react"
 import {
-  AudioWaveform,
   BookOpen,
   Bot,
-  Command,
-  Frame,
   GalleryVerticalEnd,
-  History,
-  LifeBuoy,
-  Map,
-  PieChart,
   Settings2,
   SquareTerminal,
-  Star,
-  Settings,
-  BookMarked,
-  FileText,
-  List,
-  Users,
-  CreditCard,
-  Gauge,
   Palette,
   TrendingUp,
   Plane,
@@ -31,12 +16,14 @@ import { NavMain } from "@/components/nav-main"
 import { NavProjects } from "@/components/nav-projects"
 import { NavUser } from "@/components/nav-user"
 import { TeamSwitcher } from "@/components/team-switcher"
+import { SearchForm } from "@/components/search-form"
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
+  useSidebar,
 } from "@/components/ui/sidebar"
 
 // This is sample data.
@@ -48,7 +35,7 @@ const data = {
   },
   teams: [
     {
-      name: "MPT",
+      name: "Medpage Today",
       logo: GalleryVerticalEnd,
       plan: "",
     },
@@ -164,14 +151,63 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const [searchQuery, setSearchQuery] = React.useState("")
+  const { state } = useSidebar()
+
+  // Filter navigation items based on search query
+  const filteredNavMain = React.useMemo(() => {
+    if (!searchQuery.trim()) {
+      return data.navMain
+    }
+
+    const query = searchQuery.toLowerCase()
+    return data.navMain
+      .map((section) => {
+        // Check if section title matches
+        const sectionMatches = section.title.toLowerCase().includes(query)
+        
+        // Filter sub-items that match
+        const filteredItems = section.items?.filter((item) =>
+          item.title.toLowerCase().includes(query)
+        )
+
+        // Include section if title matches OR if it has matching sub-items
+        if (sectionMatches || (filteredItems && filteredItems.length > 0)) {
+          return {
+            ...section,
+            items: sectionMatches ? section.items : filteredItems,
+            isActive: true, // Auto-expand sections with matches
+          }
+        }
+
+        return null
+      })
+      .filter((item): item is NonNullable<typeof item> => item !== null)
+  }, [searchQuery])
+
+  // Filter projects based on search query
+  const filteredProjects = React.useMemo(() => {
+    if (!searchQuery.trim()) {
+      return data.projects
+    }
+
+    const query = searchQuery.toLowerCase()
+    return data.projects.filter((project) =>
+      project.name.toLowerCase().includes(query)
+    )
+  }, [searchQuery])
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
+        {state === "expanded" && (
+          <SearchForm value={searchQuery} onChange={(value) => setSearchQuery(value)} />
+        )}
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        <NavMain items={filteredNavMain} />
+        <NavProjects projects={filteredProjects} />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />

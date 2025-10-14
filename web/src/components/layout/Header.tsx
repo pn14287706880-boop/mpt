@@ -9,7 +9,7 @@ export default async function Header() {
   return (
     <header className="site-header">
       <Link className="site-logo" href="/">
-        MPT
+        MedPage Today
       </Link>
       <nav className="site-nav">
         {user ? (
