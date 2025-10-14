@@ -180,10 +180,12 @@ export default function Pro360Page() {
         width: 120,
         resizable: true,
         sortable: true,
-        renderCell: ({ row }) => numberFormatter.format(row.lme),
+        cellClass: "pro360-numeric-cell",
+        headerCellClass: "pro360-numeric-header",
+        renderCell: ({ row }) => <span className="pro360-numeric-value">{numberFormatter.format(row.lme)}</span>,
         renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
           const total = childRows.reduce((sum, row) => sum + row.lme, 0)
-          return <strong>{numberFormatter.format(total)}</strong>
+          return <strong className="pro360-numeric-value">{numberFormatter.format(total)}</strong>
         },
       },
       {
@@ -192,10 +194,12 @@ export default function Pro360Page() {
         width: 120,
         resizable: true,
         sortable: true,
-        renderCell: ({ row }) => numberFormatter.format(row.nlme),
+        cellClass: "pro360-numeric-cell",
+        headerCellClass: "pro360-numeric-header",
+        renderCell: ({ row }) => <span className="pro360-numeric-value">{numberFormatter.format(row.nlme)}</span>,
         renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
           const total = childRows.reduce((sum, row) => sum + row.nlme, 0)
-          return <strong>{numberFormatter.format(total)}</strong>
+          return <strong className="pro360-numeric-value">{numberFormatter.format(total)}</strong>
         },
       },
       {
@@ -204,10 +208,12 @@ export default function Pro360Page() {
         width: 120,
         resizable: true,
         sortable: true,
-        renderCell: ({ row }) => numberFormatter.format(row.lmx),
+        cellClass: "pro360-numeric-cell",
+        headerCellClass: "pro360-numeric-header",
+        renderCell: ({ row }) => <span className="pro360-numeric-value">{numberFormatter.format(row.lmx)}</span>,
         renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
           const total = childRows.reduce((sum, row) => sum + row.lmx, 0)
-          return <strong>{numberFormatter.format(total)}</strong>
+          return <strong className="pro360-numeric-value">{numberFormatter.format(total)}</strong>
         },
       },
       {
@@ -216,10 +222,12 @@ export default function Pro360Page() {
         width: 120,
         resizable: true,
         sortable: true,
-        renderCell: ({ row }) => numberFormatter.format(row.nlmx),
+        cellClass: "pro360-numeric-cell",
+        headerCellClass: "pro360-numeric-header",
+        renderCell: ({ row }) => <span className="pro360-numeric-value">{numberFormatter.format(row.nlmx)}</span>,
         renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
           const total = childRows.reduce((sum, row) => sum + row.nlmx, 0)
-          return <strong>{numberFormatter.format(total)}</strong>
+          return <strong className="pro360-numeric-value">{numberFormatter.format(total)}</strong>
         },
       },
       {
@@ -228,10 +236,12 @@ export default function Pro360Page() {
         width: 120,
         resizable: true,
         sortable: true,
-        renderCell: ({ row }) => numberFormatter.format(row.lmpv),
+        cellClass: "pro360-numeric-cell",
+        headerCellClass: "pro360-numeric-header",
+        renderCell: ({ row }) => <span className="pro360-numeric-value">{numberFormatter.format(row.lmpv)}</span>,
         renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
           const total = childRows.reduce((sum, row) => sum + row.lmpv, 0)
-          return <strong>{numberFormatter.format(total)}</strong>
+          return <strong className="pro360-numeric-value">{numberFormatter.format(total)}</strong>
         },
       },
       {
@@ -240,10 +250,12 @@ export default function Pro360Page() {
         width: 120,
         resizable: true,
         sortable: true,
-        renderCell: ({ row }) => numberFormatter.format(row.nlmpv),
+        cellClass: "pro360-numeric-cell",
+        headerCellClass: "pro360-numeric-header",
+        renderCell: ({ row }) => <span className="pro360-numeric-value">{numberFormatter.format(row.nlmpv)}</span>,
         renderGroupCell: ({ childRows }: RenderGroupCellProps<Pro360Data>) => {
           const total = childRows.reduce((sum, row) => sum + row.nlmpv, 0)
-          return <strong>{numberFormatter.format(total)}</strong>
+          return <strong className="pro360-numeric-value">{numberFormatter.format(total)}</strong>
         },
       },
     ],
@@ -381,9 +393,9 @@ export default function Pro360Page() {
         </div>
 
         {/* Group By Controls */}
-        <div className="rounded-lg border bg-card p-4 shadow-sm">
-          <div className="mb-2 text-sm font-semibold">Group by columns:</div>
-          <div className="flex flex-wrap gap-4 text-sm">
+        <div className="rounded-lg border bg-card px-4 py-3 shadow-sm">
+          <div className="flex flex-wrap items-center gap-4 text-sm">
+            <span className="font-semibold">Group By:</span>
             {groupableColumns.map((col) => (
               <label
                 key={col.key}

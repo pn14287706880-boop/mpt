@@ -305,3 +305,41 @@ a {
   gap: 0.5rem;
   white-space: nowrap;
 }
+
+.pro360-grid-wrapper .rdg {
+  --rdg-font-size: 13px;
+}
+
+.pro360-grid-wrapper .rdg-header-row,
+.pro360-grid-wrapper .rdg-row {
+  min-height: 36px;
+}
+
+.pro360-grid-wrapper .rdg-cell {
+  padding-block: 0.35rem;
+  padding-inline: 0.5rem;
+}
+
+.pro360-grid-wrapper .pro360-numeric-cell {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.pro360-grid-wrapper .pro360-numeric-header {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  text-align: right;
+}
+
+.pro360-grid-wrapper .pro360-numeric-value {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
