@@ -40,6 +40,7 @@ async function fetchPro360Data() {
         CampaignNickName,
         TacticType,
         format_date('%Y-%m',ActivityDate) yearmonth,
+        ActivityDate,
         BillingType,
         sum(a.lme) lme,
         sum(a.nlme) nlme,
@@ -49,7 +50,7 @@ async function fetchPro360Data() {
         sum(a.nlmpv) nlmpv
       FROM \`everyday-health-pro.BI_Gold.pro360\`, unnest(activity) a
       WHERE ActivityDate >= "2024-01-01"
-      GROUP BY 1,2,3,4,5,6
+      GROUP BY 1,2,3,4,5,6,7
     `;
 
     console.log('Executing BigQuery...');

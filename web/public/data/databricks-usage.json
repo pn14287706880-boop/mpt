@@ -3,6 +3,2302 @@
     "year": "2025",
     "year_mon": "2025-Jan",
     "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 450.54
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "HEC",
+    "usage_amount": 299.62
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "HEC",
+    "usage_amount": 342.99
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 280.95
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "HEC",
+    "usage_amount": 307.74
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 560.15
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "HEC",
+    "usage_amount": 219.93
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "UNDEFINED",
+    "usage_amount": 575.77
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "HEC",
+    "usage_amount": 288.15
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "UNDEFINED",
+    "usage_amount": 393.24
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 306.32
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "HEC",
+    "usage_amount": 335.2
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "HEC",
+    "usage_amount": 287.68
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 521.79
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "HEC",
+    "usage_amount": 219.83
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "UNDEFINED",
+    "usage_amount": 187.84
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "HEC",
+    "usage_amount": 124.93
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "UNDEFINED",
+    "usage_amount": 265.41
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "UNDEFINED",
+    "usage_amount": 172.95
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "HEC",
+    "usage_amount": 51.26
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "UNDEFINED",
+    "usage_amount": 76.69
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "HEC",
+    "usage_amount": 3.26
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "UNDEFINED",
+    "usage_amount": 173.07
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "UNDEFINED",
+    "usage_amount": 374.55
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "HEC",
+    "usage_amount": 140.88
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "HEC",
+    "usage_amount": 315.16
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "UNDEFINED",
+    "usage_amount": 463.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 1036.76
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 391.18
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "HEC",
+    "usage_amount": 125.01
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "UNDEFINED",
+    "usage_amount": 269.53
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "HEC",
+    "usage_amount": 259.34
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "UNDEFINED",
+    "usage_amount": 601.84
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "HEC",
+    "usage_amount": 245.03
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "UNDEFINED",
+    "usage_amount": 295.97
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "HEC",
+    "usage_amount": 266.54
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "UNDEFINED",
+    "usage_amount": 349.52
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "HEC",
+    "usage_amount": 227.6
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "UNDEFINED",
+    "usage_amount": 88.69
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 132.55
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 39.11
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 91.45
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "UNDEFINED",
+    "usage_amount": 31.65
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "UNDEFINED",
+    "usage_amount": 57.88
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 265.39
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 48.22
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "UNDEFINED",
+    "usage_amount": 2.68
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "UNDEFINED",
+    "usage_amount": 22.07
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "UNDEFINED",
+    "usage_amount": 162.14
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "UNDEFINED",
+    "usage_amount": 381.31
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 292.76
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "UNDEFINED",
+    "usage_amount": 16.11
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "UNDEFINED",
+    "usage_amount": 21.12
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "UNDEFINED",
+    "usage_amount": 20.92
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "UNDEFINED",
+    "usage_amount": 26.88
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.11
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.01
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 0
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.18
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.16
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.02
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "DS",
+    "usage_amount": 365.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "DS",
+    "usage_amount": 1612.53
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "UNDEFINED",
+    "usage_amount": 1.9
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "DS",
+    "usage_amount": 634.5
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 299.78
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "UNDEFINED",
+    "usage_amount": 1.14
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.41
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.01
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "ENG",
+    "usage_amount": 504.98
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "ENG",
+    "usage_amount": 427.2
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "ENG",
+    "usage_amount": 580.82
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "ENG",
+    "usage_amount": 762.62
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "ENG",
+    "usage_amount": 602.91
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "ENG",
+    "usage_amount": 403.11
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "ENG",
+    "usage_amount": 449.78
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ENG",
+    "usage_amount": 168.79
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "ENG",
+    "usage_amount": 433.73
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "ENG",
+    "usage_amount": 481.95
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "ENG",
+    "usage_amount": 180.89
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "ENG",
+    "usage_amount": 433.62
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "ENG",
+    "usage_amount": 424.65
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "ENG",
+    "usage_amount": 472.38
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "UNDEFINED",
+    "usage_amount": 6.34
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "ENG",
+    "usage_amount": 412.82
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 30.58
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "ENG",
+    "usage_amount": 25.72
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 9.17
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 21
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "ENG",
+    "usage_amount": 13.85
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "UNDEFINED",
+    "usage_amount": 41.29
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "ENG",
+    "usage_amount": 2.99
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "UNDEFINED",
+    "usage_amount": 32.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "ENG",
+    "usage_amount": 0.46
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 289.43
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "ENG",
+    "usage_amount": 68.05
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "HEC",
+    "usage_amount": 3.83
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "DS",
+    "usage_amount": 3.08
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "BI",
+    "usage_amount": 13.29
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "ENG",
+    "usage_amount": 46.63
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 97.29
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "DS",
+    "usage_amount": 0.24
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "BI",
+    "usage_amount": 1.28
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "ENG",
+    "usage_amount": 0.34
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ENG",
+    "usage_amount": 13.46
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "UNDEFINED",
+    "usage_amount": 98.38
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "HEC",
+    "usage_amount": 1.05
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ENG",
+    "usage_amount": 0.81
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "DS",
+    "usage_amount": 177.72
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "BI",
+    "usage_amount": 0.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "ENG",
+    "usage_amount": 44.86
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "DS",
+    "usage_amount": 222.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "UNDEFINED",
+    "usage_amount": 892.7
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "BI",
+    "usage_amount": 2.76
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "HEC",
+    "usage_amount": 2.27
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "ENG",
+    "usage_amount": 70.7
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 455.79
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "BI",
+    "usage_amount": 0.49
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 2.5
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.74
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 1.17
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 5.47
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 2.58
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "DS",
+    "usage_amount": 3544.45
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "ENG",
+    "usage_amount": 1552.53
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "HEC",
+    "usage_amount": 427.47
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "ENG",
+    "usage_amount": 2473.57
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "DS",
+    "usage_amount": 3726.05
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "HEC",
+    "usage_amount": 332.43
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "QA",
+    "usage_amount": 55.06
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 28.64
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "DS",
+    "usage_amount": 9.93
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "DS",
+    "usage_amount": 3826.46
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "HEC",
+    "usage_amount": 421.3
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "ENG",
+    "usage_amount": 2159.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "ENG",
+    "usage_amount": 629.69
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 8.76
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "QA",
+    "usage_amount": 41.78
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "ENG",
+    "usage_amount": 2661.15
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "HEC",
+    "usage_amount": 390.66
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "DS",
+    "usage_amount": 4927.69
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "HEC",
+    "usage_amount": 327.75
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "DS",
+    "usage_amount": 3537.97
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "ENG",
+    "usage_amount": 648.54
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 0.28
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "HEC",
+    "usage_amount": 353.2
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "ENG",
+    "usage_amount": 1670.81
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "DS",
+    "usage_amount": 3754.87
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "QA",
+    "usage_amount": 95.21
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "DS",
+    "usage_amount": 3587.51
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "HEC",
+    "usage_amount": 297.82
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "ENG",
+    "usage_amount": 1517.63
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "QA",
+    "usage_amount": 60.21
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "HEC",
+    "usage_amount": 987.57
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "ENG",
+    "usage_amount": 550.72
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "DS",
+    "usage_amount": 2949.7
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "UNDEFINED",
+    "usage_amount": 43.77
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "DS",
+    "usage_amount": 2889.45
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "HEC",
+    "usage_amount": 1320.38
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "ENG",
+    "usage_amount": 762.18
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "UNDEFINED",
+    "usage_amount": 918.85
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "ENG",
+    "usage_amount": 46.85
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "HEC",
+    "usage_amount": 1.71
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "HEC",
+    "usage_amount": 3.78
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "BI",
+    "usage_amount": 1.35
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "DS",
+    "usage_amount": 2923.47
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "HEC",
+    "usage_amount": 1703.24
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "ENG",
+    "usage_amount": 554.63
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "UNDEFINED",
+    "usage_amount": 182.33
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "DS",
+    "usage_amount": 1892.36
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "HEC",
+    "usage_amount": 1549.49
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 371.67
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "UNDEFINED",
+    "usage_amount": 154.91
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 0.63
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "DS",
+    "usage_amount": 1750.6
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "HEC",
+    "usage_amount": 1050.94
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "ENG",
+    "usage_amount": 520.9
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "UNDEFINED",
+    "usage_amount": 190.77
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "DS",
+    "usage_amount": 1331.01
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ANALYTICS",
+    "usage_amount": 388.26
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ENG",
+    "usage_amount": 374.13
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "HEC",
+    "usage_amount": 88.83
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "QA",
+    "usage_amount": 45.78
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "DS",
+    "usage_amount": 3316.12
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "ENG",
+    "usage_amount": 1073.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "HEC",
+    "usage_amount": 264.23
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "QA",
+    "usage_amount": 118.71
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "UNDEFINED",
+    "usage_amount": 15.51
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "DS",
+    "usage_amount": 3507.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "ENG",
+    "usage_amount": 1813.58
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "QA",
+    "usage_amount": 56.21
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 237.76
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "DS",
+    "usage_amount": 1295.39
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "HEC",
+    "usage_amount": 150.16
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "ENG",
+    "usage_amount": 772.31
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "UNDEFINED",
+    "usage_amount": 1.82
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "DS",
+    "usage_amount": 3231.98
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "HEC",
+    "usage_amount": 395.93
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "ENG",
+    "usage_amount": 3339.61
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "ENG",
+    "usage_amount": 45.58
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "UNDEFINED",
+    "usage_amount": 1.9
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "DS",
+    "usage_amount": 3373.24
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "ENG",
+    "usage_amount": 267.47
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "HEC",
+    "usage_amount": 443.39
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "ENG",
+    "usage_amount": 163.87
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "UNDEFINED",
+    "usage_amount": 15.52
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "DS",
+    "usage_amount": 3180.69
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "HEC",
+    "usage_amount": 607.11
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "ENG",
+    "usage_amount": 570.97
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "QA",
+    "usage_amount": 7.07
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "UNDEFINED",
+    "usage_amount": 83.32
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "DS",
+    "usage_amount": 2953.95
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "HEC",
+    "usage_amount": 704.56
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "ENG",
+    "usage_amount": 617.38
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "UNDEFINED",
+    "usage_amount": 65.9
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 73.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "DS",
+    "usage_amount": 8.06
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 151.53
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "ENG",
+    "usage_amount": 226.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "BI",
+    "usage_amount": 8.65
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "DS",
+    "usage_amount": 17.32
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "SO",
+    "usage_amount": 12.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "HEC",
+    "usage_amount": 1.9
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 96.22
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "DS",
+    "usage_amount": 2.82
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "SO",
+    "usage_amount": 15.56
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "HEC",
+    "usage_amount": 1.47
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "ENG",
+    "usage_amount": 55.02
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "BI",
+    "usage_amount": 1.54
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "UNDEFINED",
+    "usage_amount": 72.01
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "ENG",
+    "usage_amount": 22.33
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "UNDEFINED",
+    "usage_amount": 234.37
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "ENG",
+    "usage_amount": 0.42
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "DS",
+    "usage_amount": 1.51
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "ENG",
+    "usage_amount": 339.07
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 149.99
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "BI",
+    "usage_amount": 190.69
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "SO",
+    "usage_amount": 23
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "HEC",
+    "usage_amount": 0.4
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 82.17
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "SO",
+    "usage_amount": 4.35
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "ENG",
+    "usage_amount": 55.07
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "BI",
+    "usage_amount": 9.84
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "DS",
+    "usage_amount": 0.88
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "QA",
+    "usage_amount": 0.72
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "SO",
+    "usage_amount": 3.38
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "QA",
+    "usage_amount": 2.41
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "BI",
+    "usage_amount": 0.39
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "HEC",
+    "usage_amount": 1.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "HEC",
+    "usage_amount": 136.49
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "UNDEFINED",
+    "usage_amount": 23.78
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "DS",
+    "usage_amount": 10.26
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ENG",
+    "usage_amount": 0.3
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "BI",
+    "usage_amount": 3.34
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "HEC",
+    "usage_amount": 341.25
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "UNDEFINED",
+    "usage_amount": 108.07
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "DS",
+    "usage_amount": 34.77
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "BI",
+    "usage_amount": 5.68
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "ENG",
+    "usage_amount": 17.12
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "SO",
+    "usage_amount": 2.99
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 278.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 149.12
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "BI",
+    "usage_amount": 9.95
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "ENG",
+    "usage_amount": 229.21
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "SO",
+    "usage_amount": 18.98
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "DS",
+    "usage_amount": 17.31
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "QA",
+    "usage_amount": 1.53
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "UNDEFINED",
+    "usage_amount": 88.97
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "UNDEFINED",
+    "usage_amount": 159.94
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "UNDEFINED",
+    "usage_amount": 225.78
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "UNDEFINED",
+    "usage_amount": 62.76
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 560.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "HEC",
+    "usage_amount": 1141.36
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 514.7
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "HEC",
+    "usage_amount": 1273.86
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "HEC",
+    "usage_amount": 1241.67
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 491.21
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "HEC",
+    "usage_amount": 1116.17
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "UNDEFINED",
+    "usage_amount": 502.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "HEC",
+    "usage_amount": 1028.29
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "UNDEFINED",
+    "usage_amount": 579.62
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "ENG",
+    "usage_amount": 39.73
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "HEC",
+    "usage_amount": 1291.54
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 546.02
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 505.55
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "HEC",
+    "usage_amount": 1055.04
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "ENG",
+    "usage_amount": 1490.18
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "HEC",
+    "usage_amount": 1265.55
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "ENG",
+    "usage_amount": 2009.62
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "DS",
+    "usage_amount": 27.42
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "ENG",
+    "usage_amount": 1761.61
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "HEC",
+    "usage_amount": 278.11
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "ENG",
+    "usage_amount": 1038.32
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "DS",
+    "usage_amount": 24.81
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "UNDEFINED",
+    "usage_amount": 36.63
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "ENG",
+    "usage_amount": 1848.91
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "ENG",
+    "usage_amount": 527.62
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 2240.41
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 318.78
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "HEC",
+    "usage_amount": 43.86
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "UNDEFINED",
+    "usage_amount": 9.09
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "ENG",
+    "usage_amount": 2603.18
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "HEC",
+    "usage_amount": 59.66
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "UNDEFINED",
+    "usage_amount": 41.21
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "HEC",
+    "usage_amount": 569.34
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "UNDEFINED",
+    "usage_amount": 155.01
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "HEC",
+    "usage_amount": 1196.86
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "UNDEFINED",
+    "usage_amount": 408.1
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 515.58
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 1176.25
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "UNDEFINED",
+    "usage_amount": 194.03
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "HEC",
+    "usage_amount": 412.37
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "HEC",
+    "usage_amount": 1074.85
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "UNDEFINED",
+    "usage_amount": 368
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "ENG",
+    "usage_amount": 6033.32
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "HEC",
+    "usage_amount": 921.83
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "ENG",
+    "usage_amount": 1769.07
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "ENG",
+    "usage_amount": 865.3
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "UNDEFINED",
+    "usage_amount": 52.39
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "HEC",
+    "usage_amount": 963.23
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "ENG",
+    "usage_amount": 3639.73
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "ENG",
+    "usage_amount": 1259.69
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "DS",
+    "usage_amount": 1.28
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "ENG",
+    "usage_amount": 1935.91
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "HEC",
+    "usage_amount": 811.21
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "ENG",
+    "usage_amount": 1041.93
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "UNDEFINED",
+    "usage_amount": 25.88
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "BI",
+    "usage_amount": 11.09
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
     "bu": "ENG",
     "usage_amount": 531.76
   },
@@ -24,34 +2320,6 @@
     "year": "2025",
     "year_mon": "2025-Jan",
     "yyyymm": "202501",
-    "bu": "ENG",
-    "usage_amount": 205.75
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "ENG",
-    "usage_amount": 153.48
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 560.8
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "DS",
-    "usage_amount": 3544.45
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
     "bu": "DS",
     "usage_amount": 827.86
   },
@@ -66,48 +2334,6 @@
     "year": "2025",
     "year_mon": "2025-Jan",
     "yyyymm": "202501",
-    "bu": "DS",
-    "usage_amount": 584.55
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "HEC",
-    "usage_amount": 150.73
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 450.54
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "HEC",
-    "usage_amount": 34.85
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 30.58
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "HEC",
-    "usage_amount": 299.62
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
     "bu": "HEC",
     "usage_amount": 124.95
   },
@@ -115,29 +2341,8 @@
     "year": "2025",
     "year_mon": "2025-Jan",
     "yyyymm": "202501",
-    "bu": "RPT",
-    "usage_amount": 19.88
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 229.48
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
     "bu": "UNDEFINED",
     "usage_amount": 82.71
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "ENG",
-    "usage_amount": 504.98
   },
   {
     "year": "2025",
@@ -151,63 +2356,7 @@
     "year_mon": "2025-Jan",
     "yyyymm": "202501",
     "bu": "HEC",
-    "usage_amount": 1141.36
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "ENG",
-    "usage_amount": 1552.53
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 73.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "HEC",
-    "usage_amount": 427.47
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 132.55
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "DS",
-    "usage_amount": 8.06
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "HEC",
     "usage_amount": 0.05
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
-    "usage_amount": 151.53
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "ENG",
-    "usage_amount": 2473.57
   },
   {
     "year": "2025",
@@ -228,34 +2377,6 @@
     "year_mon": "2025-May",
     "yyyymm": "202505",
     "bu": "UNDEFINED",
-    "usage_amount": 43.55
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "ENG",
-    "usage_amount": 76.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "ENG",
-    "usage_amount": 427.2
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "ENG",
-    "usage_amount": 226.8
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
     "usage_amount": 187.19
   },
   {
@@ -270,49 +2391,7 @@
     "year_mon": "2025-May",
     "yyyymm": "202505",
     "bu": "ENG",
-    "usage_amount": 25.72
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "ENG",
-    "usage_amount": 717.98
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "HEC",
-    "usage_amount": 294.37
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "DS",
-    "usage_amount": 839.01
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "ENG",
     "usage_amount": 387.9
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
-    "usage_amount": 514.7
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "DS",
-    "usage_amount": 3726.05
   },
   {
     "year": "2025",
@@ -325,120 +2404,8 @@
     "year": "2025",
     "year_mon": "2025-May",
     "yyyymm": "202505",
-    "bu": "HEC",
-    "usage_amount": 1273.86
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "HEC",
-    "usage_amount": 342.99
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "HEC",
-    "usage_amount": 332.43
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "HEC",
-    "usage_amount": 37.83
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
-    "usage_amount": 280.95
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "QA",
-    "usage_amount": 55.06
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "RPT",
-    "usage_amount": 23.8
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
     "bu": "RPT",
     "usage_amount": 27.23
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
-    "usage_amount": 9.17
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "BI",
-    "usage_amount": 8.65
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "DS",
-    "usage_amount": 17.32
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
-    "usage_amount": 28.64
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "SO",
-    "usage_amount": 12.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
-    "usage_amount": 39.11
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "DS",
-    "usage_amount": 9.93
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "HEC",
-    "usage_amount": 1.9
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-May",
-    "yyyymm": "202505",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.74
   },
   {
     "year": "2025",
@@ -451,22 +2418,8 @@
     "year": "2025",
     "year_mon": "2025-Apr",
     "yyyymm": "202504",
-    "bu": "DS",
-    "usage_amount": 784.83
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
     "bu": "ENG",
     "usage_amount": 645.23
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "HEC",
-    "usage_amount": 243.95
   },
   {
     "year": "2025",
@@ -486,113 +2439,8 @@
     "year": "2025",
     "year_mon": "2025-Apr",
     "yyyymm": "202504",
-    "bu": "DS",
-    "usage_amount": 3826.46
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "HEC",
-    "usage_amount": 1241.67
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "HEC",
-    "usage_amount": 307.74
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 96.22
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "HEC",
-    "usage_amount": 421.3
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "HEC",
-    "usage_amount": 36.86
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 1.17
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "DS",
-    "usage_amount": 2.82
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "ENG",
-    "usage_amount": 749.37
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 21
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 560.15
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 491.21
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "SO",
-    "usage_amount": 15.56
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
     "bu": "RPT",
     "usage_amount": 24.78
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "RPT",
-    "usage_amount": 22.27
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "ENG",
-    "usage_amount": 2159.8
   },
   {
     "year": "2025",
@@ -605,106 +2453,8 @@
     "year": "2025",
     "year_mon": "2025-Apr",
     "yyyymm": "202504",
-    "bu": "ENG",
-    "usage_amount": 580.82
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "HEC",
-    "usage_amount": 1.47
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "ENG",
-    "usage_amount": 115.09
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 46.47
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "ENG",
-    "usage_amount": 13.85
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
     "bu": "END",
     "usage_amount": 1.25
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "ENG",
-    "usage_amount": 55.02
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "ENG",
-    "usage_amount": 629.69
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 8.76
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 91.45
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "QA",
-    "usage_amount": 41.78
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "BI",
-    "usage_amount": 1.54
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.18
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Apr",
-    "yyyymm": "202504",
-    "bu": "QA",
-    "usage_amount": 0.72
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "UNDEFINED",
-    "usage_amount": 72.01
   },
   {
     "year": "2025",
@@ -724,106 +2474,8 @@
     "year": "2025",
     "year_mon": "2025-Mar",
     "yyyymm": "202503",
-    "bu": "HEC",
-    "usage_amount": 173.49
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
     "bu": "ENG",
     "usage_amount": 661.88
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "DS",
-    "usage_amount": 4927.69
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "HEC",
-    "usage_amount": 1116.17
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "HEC",
-    "usage_amount": 219.93
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "DS",
-    "usage_amount": 693.61
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "HEC",
-    "usage_amount": 34.32
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "HEC",
-    "usage_amount": 124.71
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "UNDEFINED",
-    "usage_amount": 575.77
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "SO",
-    "usage_amount": 3.38
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "HEC",
-    "usage_amount": 390.66
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "UNDEFINED",
-    "usage_amount": 124.58
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "ENG",
-    "usage_amount": 199.12
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "UNDEFINED",
-    "usage_amount": 502.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "ENG",
-    "usage_amount": 2661.15
   },
   {
     "year": "2025",
@@ -836,43 +2488,15 @@
     "year": "2025",
     "year_mon": "2025-Mar",
     "yyyymm": "202503",
-    "bu": "RPT",
-    "usage_amount": 19.52
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "ENG",
-    "usage_amount": 762.62
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
     "bu": "UNDEFINED",
-    "usage_amount": 41.29
+    "usage_amount": 124.58
   },
   {
     "year": "2025",
     "year_mon": "2025-Mar",
     "yyyymm": "202503",
-    "bu": "UNDEFINED",
-    "usage_amount": 46.73
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "ENG",
-    "usage_amount": 2.99
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "ENG",
-    "usage_amount": 620.85
+    "bu": "HEC",
+    "usage_amount": 173.49
   },
   {
     "year": "2025",
@@ -885,64 +2509,8 @@
     "year": "2025",
     "year_mon": "2025-Mar",
     "yyyymm": "202503",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.16
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "ENG",
-    "usage_amount": 22.33
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
     "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
     "usage_amount": 1.19
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "QA",
-    "usage_amount": 2.41
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "BI",
-    "usage_amount": 0.39
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "UNDEFINED",
-    "usage_amount": 31.65
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "ENG",
-    "usage_amount": 0.34
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Mar",
-    "yyyymm": "202503",
-    "bu": "HEC",
-    "usage_amount": 1.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "HEC",
-    "usage_amount": 327.75
   },
   {
     "year": "2025",
@@ -976,90 +2544,6 @@
     "year": "2025",
     "year_mon": "2025-Feb",
     "yyyymm": "202502",
-    "bu": "DS",
-    "usage_amount": 583.48
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "DS",
-    "usage_amount": 3537.97
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "HEC",
-    "usage_amount": 1028.29
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "HEC",
-    "usage_amount": 288.15
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "HEC",
-    "usage_amount": 30.87
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "HEC",
-    "usage_amount": 102
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "UNDEFINED",
-    "usage_amount": 393.24
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "ENG",
-    "usage_amount": 509.81
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "UNDEFINED",
-    "usage_amount": 32.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "ENG",
-    "usage_amount": 101.92
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "UNDEFINED",
-    "usage_amount": 579.62
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "UNDEFINED",
-    "usage_amount": 234.37
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
     "bu": "UNDEFINED",
     "usage_amount": 87.55
   },
@@ -1068,49 +2552,7 @@
     "year_mon": "2025-Feb",
     "yyyymm": "202502",
     "bu": "RPT",
-    "usage_amount": 18.26
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "ENG",
-    "usage_amount": 648.54
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "ENG",
-    "usage_amount": 602.91
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "RPT",
     "usage_amount": 18.81
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "UNDEFINED",
-    "usage_amount": 86.6
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "ENG",
-    "usage_amount": 0.46
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "ENG",
-    "usage_amount": 0.42
   },
   {
     "year": "2025",
@@ -1130,92 +2572,8 @@
     "year": "2025",
     "year_mon": "2025-Feb",
     "yyyymm": "202502",
-    "bu": "UNDEFINED",
-    "usage_amount": 57.88
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "UNDEFINED",
-    "usage_amount": 26.88
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "ENG",
-    "usage_amount": 39.73
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
-    "bu": "DS",
-    "usage_amount": 1.51
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Feb",
-    "yyyymm": "202502",
     "bu": "HEC",
     "usage_amount": 0.1
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.11
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jan",
-    "yyyymm": "202501",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.28
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "ENG",
-    "usage_amount": 339.07
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 289.43
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "ENG",
-    "usage_amount": 68.05
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 149.99
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "HEC",
-    "usage_amount": 353.2
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "ENG",
-    "usage_amount": 1670.81
   },
   {
     "year": "2025",
@@ -1236,63 +2594,7 @@
     "year_mon": "2025-Jul",
     "yyyymm": "202507",
     "bu": "HEC",
-    "usage_amount": 33.82
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "HEC",
-    "usage_amount": 271.37
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "HEC",
     "usage_amount": 72.5
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "DS",
-    "usage_amount": 647.66
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "DS",
-    "usage_amount": 3754.87
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "HEC",
-    "usage_amount": 1291.54
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "ENG",
-    "usage_amount": 709.82
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 51.25
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "ENG",
-    "usage_amount": 229.02
   },
   {
     "year": "2025",
@@ -1312,20 +2614,6 @@
     "year": "2025",
     "year_mon": "2025-Jul",
     "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 306.32
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 546.02
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
     "bu": "END",
     "usage_amount": 1.06
   },
@@ -1334,112 +2622,7 @@
     "year_mon": "2025-Jul",
     "yyyymm": "202507",
     "bu": "RPT",
-    "usage_amount": 24.93
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "HEC",
-    "usage_amount": 335.2
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "RPT",
     "usage_amount": 24.84
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "HEC",
-    "usage_amount": 3.83
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 5.47
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "DS",
-    "usage_amount": 3.08
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.01
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "BI",
-    "usage_amount": 13.29
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "QA",
-    "usage_amount": 95.21
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "ENG",
-    "usage_amount": 403.11
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "BI",
-    "usage_amount": 190.69
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "SO",
-    "usage_amount": 23
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "HEC",
-    "usage_amount": 0.4
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "UNDEFINED",
-    "usage_amount": 265.39
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "UNDEFINED",
-    "usage_amount": 82.17
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "ENG",
-    "usage_amount": 46.63
   },
   {
     "year": "2025",
@@ -1452,22 +2635,8 @@
     "year": "2025",
     "year_mon": "2025-Jun",
     "yyyymm": "202506",
-    "bu": "DS",
-    "usage_amount": 768.59
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
     "bu": "ENG",
     "usage_amount": 454.58
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "HEC",
-    "usage_amount": 263.06
   },
   {
     "year": "2025",
@@ -1487,92 +2656,8 @@
     "year": "2025",
     "year_mon": "2025-Jun",
     "yyyymm": "202506",
-    "bu": "UNDEFINED",
-    "usage_amount": 505.55
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "DS",
-    "usage_amount": 3587.51
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "HEC",
-    "usage_amount": 1055.04
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "HEC",
-    "usage_amount": 287.68
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "HEC",
-    "usage_amount": 297.82
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "UNDEFINED",
-    "usage_amount": 521.79
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "HEC",
-    "usage_amount": 33.65
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "SO",
-    "usage_amount": 4.35
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "UNDEFINED",
-    "usage_amount": 97.29
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "ENG",
-    "usage_amount": 614.91
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "ENG",
-    "usage_amount": 1517.63
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
     "bu": "ENG",
     "usage_amount": 480.37
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "ENG",
-    "usage_amount": 55.07
   },
   {
     "year": "2025",
@@ -1585,99 +2670,211 @@
     "year": "2025",
     "year_mon": "2025-Jun",
     "yyyymm": "202506",
-    "bu": "RPT",
-    "usage_amount": 20.93
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "ENG",
-    "usage_amount": 212.58
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "BI",
-    "usage_amount": 9.84
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "UNDEFINED",
-    "usage_amount": 42.54
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
     "bu": "END",
     "usage_amount": 1.07
   },
   {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "UNDEFINED",
-    "usage_amount": 2.58
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
     "bu": "DS",
-    "usage_amount": 0.24
+    "usage_amount": 869.91
   },
   {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "BI",
-    "usage_amount": 1.28
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
     "bu": "UNDEFINED",
-    "usage_amount": 0
+    "usage_amount": 231.09
   },
   {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "QA",
-    "usage_amount": 60.21
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "DS",
-    "usage_amount": 0.88
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jun",
-    "yyyymm": "202506",
-    "bu": "UNDEFINED",
-    "usage_amount": 48.22
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
     "bu": "ENG",
-    "usage_amount": 13.46
+    "usage_amount": 11.63
   },
   {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
     "bu": "HEC",
-    "usage_amount": 136.49
+    "usage_amount": 40.36
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "ENG",
+    "usage_amount": 47.29
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 2.04
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "DS",
+    "usage_amount": 859.69
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "HEC",
+    "usage_amount": 41.06
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "UNDEFINED",
+    "usage_amount": 249.37
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "ENG",
+    "usage_amount": 46.13
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.94
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "DS",
+    "usage_amount": 888.91
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "UNDEFINED",
+    "usage_amount": 214.46
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "HEC",
+    "usage_amount": 31.17
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "ENG",
+    "usage_amount": 46.09
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.95
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "DS",
+    "usage_amount": 850.27
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "HEC",
+    "usage_amount": 36.33
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "UNDEFINED",
+    "usage_amount": 225.84
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 0.59
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 64.26
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.69
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "DS",
+    "usage_amount": 127.22
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "DS",
+    "usage_amount": 148.79
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "DS",
+    "usage_amount": 876.86
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "HEC",
+    "usage_amount": 52.39
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "UNDEFINED",
+    "usage_amount": 240.86
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "ENG",
+    "usage_amount": 111.14
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.78
   },
   {
     "year": "2025",
@@ -1690,27 +2887,6 @@
     "year": "2025",
     "year_mon": "2025-Oct",
     "yyyymm": "202510",
-    "bu": "DS",
-    "usage_amount": 1331.01
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "ANALYTICS",
-    "usage_amount": 388.26
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "UNDEFINED",
-    "usage_amount": 98.38
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
     "bu": "ENG",
     "usage_amount": 168.7
   },
@@ -1718,71 +2894,8 @@
     "year": "2025",
     "year_mon": "2025-Oct",
     "yyyymm": "202510",
-    "bu": "DS",
-    "usage_amount": 224.43
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "HEC",
-    "usage_amount": 14.18
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "HEC",
-    "usage_amount": 112.78
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "UNDEFINED",
-    "usage_amount": 374.55
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
     "bu": "ENG",
     "usage_amount": 259.89
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "ENG",
-    "usage_amount": 219.54
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "ENG",
-    "usage_amount": 133.21
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "RPT",
-    "usage_amount": 16.36
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "HEC",
-    "usage_amount": 569.34
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "HEC",
-    "usage_amount": 140.88
   },
   {
     "year": "2025",
@@ -1809,141 +2922,8 @@
     "year": "2025",
     "year_mon": "2025-Oct",
     "yyyymm": "202510",
-    "bu": "HEC",
-    "usage_amount": 1.05
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "ENG",
-    "usage_amount": 374.13
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "ENG",
-    "usage_amount": 168.79
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
     "bu": "END",
     "usage_amount": 0.46
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "ENG",
-    "usage_amount": 0.81
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "HEC",
-    "usage_amount": 88.83
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "UNDEFINED",
-    "usage_amount": 162.14
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "UNDEFINED",
-    "usage_amount": 23.78
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "UNDEFINED",
-    "usage_amount": 14.35
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "UNDEFINED",
-    "usage_amount": 155.01
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "DS",
-    "usage_amount": 177.72
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "QA",
-    "usage_amount": 45.78
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "BI",
-    "usage_amount": 0.8
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "DS",
-    "usage_amount": 10.26
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "DS",
-    "usage_amount": 365.8
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "ENG",
-    "usage_amount": 0.3
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Oct",
-    "yyyymm": "202510",
-    "bu": "BI",
-    "usage_amount": 3.34
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "ENG",
-    "usage_amount": 44.86
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "DS",
-    "usage_amount": 1612.53
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "HEC",
-    "usage_amount": 341.25
   },
   {
     "year": "2025",
@@ -1956,22 +2936,8 @@
     "year": "2025",
     "year_mon": "2025-Sep",
     "yyyymm": "202509",
-    "bu": "DS",
-    "usage_amount": 222.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
     "bu": "ENG",
     "usage_amount": 406.32
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "HEC",
-    "usage_amount": 289.73
   },
   {
     "year": "2025",
@@ -1991,43 +2957,876 @@
     "year": "2025",
     "year_mon": "2025-Sep",
     "yyyymm": "202509",
-    "bu": "UNDEFINED",
-    "usage_amount": 892.7
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "DS",
-    "usage_amount": 3316.12
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "HEC",
-    "usage_amount": 1196.86
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "HEC",
-    "usage_amount": 315.16
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
     "bu": "ENG",
-    "usage_amount": 1073.8
+    "usage_amount": 838.55
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "RPT",
+    "usage_amount": 20.6
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
+    "bu": "END",
+    "usage_amount": 1.14
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "DS",
+    "usage_amount": 850.02
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "ENG",
+    "usage_amount": 379.92
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "ENG",
+    "usage_amount": 803.97
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 152.37
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 79.41
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "RPT",
+    "usage_amount": 25.25
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "END",
+    "usage_amount": 1.16
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "DS",
+    "usage_amount": 326.07
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "ENG",
+    "usage_amount": 88.99
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "HEC",
+    "usage_amount": 30.61
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "ENG",
+    "usage_amount": 95.11
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "RPT",
+    "usage_amount": 7.85
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "UNDEFINED",
+    "usage_amount": 23.01
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 0.71
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "END",
+    "usage_amount": 1.02
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Oct",
+    "yyyymm": "202410",
+    "bu": "HEC",
+    "usage_amount": 0.06
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "DS",
+    "usage_amount": 851.45
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "HEC",
+    "usage_amount": 63.14
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "ENG",
+    "usage_amount": 149.21
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "ENG",
+    "usage_amount": 180.25
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "RPT",
+    "usage_amount": 21.64
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "UNDEFINED",
+    "usage_amount": 56.48
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.84
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "END",
+    "usage_amount": 2.68
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Sep",
+    "yyyymm": "202409",
+    "bu": "HEC",
+    "usage_amount": 0.06
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "DS",
+    "usage_amount": 837.85
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "ENG",
+    "usage_amount": 104.21
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "RPT",
+    "usage_amount": 17.45
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "HEC",
+    "usage_amount": 51.04
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "UNDEFINED",
+    "usage_amount": 81.6
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "ENG",
+    "usage_amount": 53.96
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Aug",
+    "yyyymm": "202408",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.81
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "DS",
+    "usage_amount": 824.3
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "HEC",
+    "usage_amount": 46.79
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "UNDEFINED",
+    "usage_amount": 208.21
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "ENG",
+    "usage_amount": 17.86
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "ENG",
+    "usage_amount": 48.76
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jul",
+    "yyyymm": "202407",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.88
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "DS",
+    "usage_amount": 822.38
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "UNDEFINED",
+    "usage_amount": 217.96
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "HEC",
+    "usage_amount": 38.02
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "ENG",
+    "usage_amount": 15.9
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "ENG",
+    "usage_amount": 45.22
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jun",
+    "yyyymm": "202406",
+    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
+    "usage_amount": 1.92
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "ENG",
+    "usage_amount": 205.75
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "ENG",
+    "usage_amount": 153.48
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "DS",
+    "usage_amount": 584.55
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "HEC",
+    "usage_amount": 150.73
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "HEC",
+    "usage_amount": 34.85
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "RPT",
+    "usage_amount": 19.88
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jan",
+    "yyyymm": "202501",
+    "bu": "UNDEFINED",
+    "usage_amount": 229.48
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "UNDEFINED",
+    "usage_amount": 43.55
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "ENG",
+    "usage_amount": 76.03
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "ENG",
+    "usage_amount": 717.98
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "HEC",
+    "usage_amount": 294.37
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "DS",
+    "usage_amount": 839.01
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "HEC",
+    "usage_amount": 37.83
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-May",
+    "yyyymm": "202505",
+    "bu": "RPT",
+    "usage_amount": 23.8
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "DS",
+    "usage_amount": 784.83
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "HEC",
+    "usage_amount": 243.95
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "HEC",
+    "usage_amount": 36.86
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "ENG",
+    "usage_amount": 749.37
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "RPT",
+    "usage_amount": 22.27
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "ENG",
+    "usage_amount": 115.09
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Apr",
+    "yyyymm": "202504",
+    "bu": "UNDEFINED",
+    "usage_amount": 46.47
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "ENG",
+    "usage_amount": 620.85
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "DS",
+    "usage_amount": 693.61
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "ENG",
+    "usage_amount": 199.12
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "HEC",
+    "usage_amount": 124.71
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "HEC",
+    "usage_amount": 34.32
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "UNDEFINED",
+    "usage_amount": 46.73
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Mar",
+    "yyyymm": "202503",
+    "bu": "RPT",
+    "usage_amount": 19.52
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "DS",
+    "usage_amount": 583.48
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "HEC",
+    "usage_amount": 30.87
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "HEC",
+    "usage_amount": 102
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "ENG",
+    "usage_amount": 509.81
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "ENG",
+    "usage_amount": 101.92
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "RPT",
+    "usage_amount": 18.26
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Feb",
+    "yyyymm": "202502",
+    "bu": "UNDEFINED",
+    "usage_amount": 86.6
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "HEC",
+    "usage_amount": 33.82
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "HEC",
+    "usage_amount": 271.37
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "DS",
+    "usage_amount": 647.66
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "ENG",
+    "usage_amount": 709.82
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "UNDEFINED",
+    "usage_amount": 51.25
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "ENG",
+    "usage_amount": 229.02
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jul",
+    "yyyymm": "202507",
+    "bu": "RPT",
+    "usage_amount": 24.93
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "DS",
+    "usage_amount": 768.59
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "HEC",
+    "usage_amount": 263.06
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "HEC",
+    "usage_amount": 33.65
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "ENG",
+    "usage_amount": 614.91
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "RPT",
+    "usage_amount": 20.93
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "ENG",
+    "usage_amount": 212.58
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Jun",
+    "yyyymm": "202506",
+    "bu": "UNDEFINED",
+    "usage_amount": 42.54
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "ENG",
+    "usage_amount": 668.46
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "UNDEFINED",
+    "usage_amount": 1277.31
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "ENG",
+    "usage_amount": 35.48
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "DS",
+    "usage_amount": 507.58
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-May",
+    "yyyymm": "202405",
+    "bu": "HEC",
+    "usage_amount": 46.49
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "DS",
+    "usage_amount": 520.68
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "UNDEFINED",
+    "usage_amount": 1398.58
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "ENG",
+    "usage_amount": 108.78
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "ENG",
+    "usage_amount": 30.26
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Apr",
+    "yyyymm": "202404",
+    "bu": "HEC",
+    "usage_amount": 49.29
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "DS",
+    "usage_amount": 518.07
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "UNDEFINED",
+    "usage_amount": 1303.64
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "ENG",
+    "usage_amount": 125.13
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Mar",
+    "yyyymm": "202403",
+    "bu": "ENG",
+    "usage_amount": 13.41
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "DS",
+    "usage_amount": 525.29
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "UNDEFINED",
+    "usage_amount": 1114.63
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 193.72
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Feb",
+    "yyyymm": "202402",
+    "bu": "ENG",
+    "usage_amount": 1.51
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "DS",
+    "usage_amount": 558.59
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "ENG",
+    "usage_amount": 199.39
+  },
+  {
+    "year": "2024",
+    "year_mon": "2024-Jan",
+    "yyyymm": "202401",
+    "bu": "UNDEFINED",
+    "usage_amount": 54.57
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "DS",
+    "usage_amount": 224.43
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "HEC",
+    "usage_amount": 14.18
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "HEC",
+    "usage_amount": 112.78
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ENG",
+    "usage_amount": 219.54
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "ENG",
+    "usage_amount": 133.21
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "RPT",
+    "usage_amount": 16.36
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Oct",
+    "yyyymm": "202510",
+    "bu": "UNDEFINED",
+    "usage_amount": 14.35
   },
   {
     "year": "2025",
     "year_mon": "2025-Sep",
     "yyyymm": "202509",
     "bu": "HEC",
-    "usage_amount": 264.23
+    "usage_amount": 289.73
   },
   {
     "year": "2025",
@@ -2047,29 +3846,8 @@
     "year": "2025",
     "year_mon": "2025-Sep",
     "yyyymm": "202509",
-    "bu": "UNDEFINED",
-    "usage_amount": 463.8
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
     "bu": "ENG",
     "usage_amount": 549.84
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "ENG",
-    "usage_amount": 838.55
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "QA",
-    "usage_amount": 118.71
   },
   {
     "year": "2025",
@@ -2090,126 +3868,56 @@
     "year_mon": "2025-Sep",
     "yyyymm": "202509",
     "bu": "UNDEFINED",
-    "usage_amount": 4.72
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "RPT",
-    "usage_amount": 20.6
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "BI",
-    "usage_amount": 2.76
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "HEC",
-    "usage_amount": 2.27
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "UNDEFINED",
     "usage_amount": 54.74
   },
   {
     "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "DS",
+    "usage_amount": 632.67
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 270.39
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "HEC",
+    "usage_amount": 36.56
+  },
+  {
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
     "bu": "ENG",
-    "usage_amount": 433.73
+    "usage_amount": 650.34
   },
   {
     "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "UNDEFINED",
-    "usage_amount": 381.31
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "UNDEFINED",
-    "usage_amount": 108.07
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "END",
-    "usage_amount": 1.14
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "UNDEFINED",
-    "usage_amount": 15.51
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "UNDEFINED",
-    "usage_amount": 1.9
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "DS",
-    "usage_amount": 34.77
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "BI",
-    "usage_amount": 5.68
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "UNDEFINED",
-    "usage_amount": 408.1
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
     "bu": "ENG",
-    "usage_amount": 17.12
+    "usage_amount": 272.27
   },
   {
     "year": "2025",
-    "year_mon": "2025-Sep",
-    "yyyymm": "202509",
-    "bu": "SO",
-    "usage_amount": 2.99
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "RPT",
+    "usage_amount": 26.99
   },
   {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "DS",
-    "usage_amount": 326.07
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "DS",
-    "usage_amount": 1295.39
+    "year": "2025",
+    "year_mon": "2025-Aug",
+    "yyyymm": "202508",
+    "bu": "UNDEFINED",
+    "usage_amount": 40.72
   },
   {
     "year": "2024",
@@ -2243,29 +3951,8 @@
     "year": "2024",
     "year_mon": "2024-Oct",
     "yyyymm": "202410",
-    "bu": "HEC",
-    "usage_amount": 125.01
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "UNDEFINED",
-    "usage_amount": 194.03
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
     "bu": "ENG",
     "usage_amount": 79.52
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "ENG",
-    "usage_amount": 88.99
   },
   {
     "year": "2024",
@@ -2280,160 +3967,6 @@
     "yyyymm": "202410",
     "bu": "RPT",
     "usage_amount": 8.77
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "HEC",
-    "usage_amount": 30.61
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "ENG",
-    "usage_amount": 95.11
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "ENG",
-    "usage_amount": 180.89
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "RPT",
-    "usage_amount": 7.85
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "UNDEFINED",
-    "usage_amount": 23.01
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "HEC",
-    "usage_amount": 150.16
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "UNDEFINED",
-    "usage_amount": 269.53
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "ENG",
-    "usage_amount": 772.31
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "HEC",
-    "usage_amount": 412.37
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 0.71
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "UNDEFINED",
-    "usage_amount": 88.97
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "UNDEFINED",
-    "usage_amount": 1.14
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "END",
-    "usage_amount": 1.02
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "UNDEFINED",
-    "usage_amount": 1.82
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "HEC",
-    "usage_amount": 0.06
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Oct",
-    "yyyymm": "202410",
-    "bu": "UNDEFINED",
-    "usage_amount": 16.11
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "DS",
-    "usage_amount": 851.45
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "HEC",
-    "usage_amount": 63.14
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "DS",
-    "usage_amount": 3231.98
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "HEC",
-    "usage_amount": 1074.85
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "HEC",
-    "usage_amount": 259.34
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "HEC",
-    "usage_amount": 395.93
   },
   {
     "year": "2024",
@@ -2467,43 +4000,8 @@
     "year": "2024",
     "year_mon": "2024-Sep",
     "yyyymm": "202409",
-    "bu": "UNDEFINED",
-    "usage_amount": 21.12
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "UNDEFINED",
-    "usage_amount": 601.84
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "UNDEFINED",
-    "usage_amount": 368
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "ENG",
-    "usage_amount": 149.21
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
     "bu": "ENG",
     "usage_amount": 709.98
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "ENG",
-    "usage_amount": 180.25
   },
   {
     "year": "2024",
@@ -2521,108 +4019,10 @@
   },
   {
     "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "ENG",
-    "usage_amount": 433.62
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "RPT",
-    "usage_amount": 21.64
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "UNDEFINED",
-    "usage_amount": 56.48
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.41
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "ENG",
-    "usage_amount": 3339.61
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.84
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "END",
-    "usage_amount": 2.68
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "UNDEFINED",
-    "usage_amount": 159.94
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "ENG",
-    "usage_amount": 6033.32
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "ENG",
-    "usage_amount": 45.58
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "HEC",
-    "usage_amount": 0.06
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Sep",
-    "yyyymm": "202409",
-    "bu": "UNDEFINED",
-    "usage_amount": 1.9
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "DS",
-    "usage_amount": 837.85
-  },
-  {
-    "year": "2024",
     "year_mon": "2024-Aug",
     "yyyymm": "202408",
     "bu": "ENG",
     "usage_amount": 1089.91
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "DS",
-    "usage_amount": 3373.24
   },
   {
     "year": "2024",
@@ -2649,29 +4049,8 @@
     "year": "2024",
     "year_mon": "2024-Aug",
     "yyyymm": "202408",
-    "bu": "HEC",
-    "usage_amount": 245.03
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
     "bu": "ENG",
     "usage_amount": 303.37
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "ENG",
-    "usage_amount": 104.21
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "RPT",
-    "usage_amount": 17.45
   },
   {
     "year": "2024",
@@ -2689,129 +4068,10 @@
   },
   {
     "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "HEC",
-    "usage_amount": 51.04
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "ENG",
-    "usage_amount": 424.65
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "UNDEFINED",
-    "usage_amount": 81.6
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "HEC",
-    "usage_amount": 921.83
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "UNDEFINED",
-    "usage_amount": 295.97
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "ENG",
-    "usage_amount": 53.96
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "ENG",
-    "usage_amount": 267.47
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "ENG",
-    "usage_amount": 1769.07
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.81
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "HEC",
-    "usage_amount": 443.39
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "ENG",
-    "usage_amount": 163.87
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "UNDEFINED",
-    "usage_amount": 225.78
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "ENG",
-    "usage_amount": 865.3
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "UNDEFINED",
-    "usage_amount": 15.52
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.01
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Aug",
-    "yyyymm": "202408",
-    "bu": "UNDEFINED",
-    "usage_amount": 52.39
-  },
-  {
-    "year": "2024",
     "year_mon": "2024-Jul",
     "yyyymm": "202407",
     "bu": "ENG",
     "usage_amount": 1360.36
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "DS",
-    "usage_amount": 824.3
   },
   {
     "year": "2024",
@@ -2824,71 +4084,8 @@
     "year": "2024",
     "year_mon": "2024-Jul",
     "yyyymm": "202407",
-    "bu": "HEC",
-    "usage_amount": 46.79
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "DS",
-    "usage_amount": 3180.69
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "HEC",
-    "usage_amount": 963.23
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "HEC",
-    "usage_amount": 266.54
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
     "bu": "DS",
     "usage_amount": 434.93
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "HEC",
-    "usage_amount": 607.11
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "UNDEFINED",
-    "usage_amount": 208.21
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "ENG",
-    "usage_amount": 3639.73
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "UNDEFINED",
-    "usage_amount": 62.76
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "UNDEFINED",
-    "usage_amount": 349.52
   },
   {
     "year": "2024",
@@ -2901,85 +4098,8 @@
     "year": "2024",
     "year_mon": "2024-Jul",
     "yyyymm": "202407",
-    "bu": "ENG",
-    "usage_amount": 17.86
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "ENG",
-    "usage_amount": 472.38
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
     "bu": "HEC",
     "usage_amount": 95.76
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "ENG",
-    "usage_amount": 570.97
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "ENG",
-    "usage_amount": 48.76
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.88
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "ENG",
-    "usage_amount": 1259.69
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "UNDEFINED",
-    "usage_amount": 6.34
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "QA",
-    "usage_amount": 7.07
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "UNDEFINED",
-    "usage_amount": 83.32
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "UNDEFINED",
-    "usage_amount": 20.92
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jul",
-    "yyyymm": "202407",
-    "bu": "DS",
-    "usage_amount": 1.28
   },
   {
     "year": "2024",
@@ -2987,27 +4107,6 @@
     "yyyymm": "202406",
     "bu": "ENG",
     "usage_amount": 1315.36
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "DS",
-    "usage_amount": 822.38
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "DS",
-    "usage_amount": 2953.95
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "HEC",
-    "usage_amount": 704.56
   },
   {
     "year": "2024",
@@ -3027,64 +4126,8 @@
     "year": "2024",
     "year_mon": "2024-Jun",
     "yyyymm": "202406",
-    "bu": "UNDEFINED",
-    "usage_amount": 217.96
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "HEC",
-    "usage_amount": 227.6
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "ENG",
-    "usage_amount": 1935.91
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
     "bu": "ENG",
     "usage_amount": 86.68
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "HEC",
-    "usage_amount": 38.02
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "ENG",
-    "usage_amount": 412.82
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "HEC",
-    "usage_amount": 811.21
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "ENG",
-    "usage_amount": 617.38
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "ENG",
-    "usage_amount": 15.9
   },
   {
     "year": "2024",
@@ -3094,1053 +4137,10 @@
     "usage_amount": 82.94
   },
   {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "ENG",
-    "usage_amount": 45.22
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.92
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "UNDEFINED",
-    "usage_amount": 88.69
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "UNDEFINED",
-    "usage_amount": 65.9
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "ENG",
-    "usage_amount": 1041.93
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jun",
-    "yyyymm": "202406",
-    "bu": "UNDEFINED",
-    "usage_amount": 25.88
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "DS",
-    "usage_amount": 869.91
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 668.46
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "HEC",
-    "usage_amount": 40.36
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "DS",
-    "usage_amount": 2949.7
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "HEC",
-    "usage_amount": 987.57
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "HEC",
-    "usage_amount": 219.83
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "DS",
-    "usage_amount": 507.58
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "UNDEFINED",
-    "usage_amount": 1277.31
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "UNDEFINED",
-    "usage_amount": 187.84
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "UNDEFINED",
-    "usage_amount": 231.09
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 550.72
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "HEC",
-    "usage_amount": 1265.55
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 2009.62
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "UNDEFINED",
-    "usage_amount": 43.77
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 449.78
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 1490.18
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 35.48
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 11.63
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "HEC",
-    "usage_amount": 46.49
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "ENG",
-    "usage_amount": 47.29
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 2.04
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "BI",
-    "usage_amount": 11.09
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-May",
-    "yyyymm": "202405",
-    "bu": "DS",
-    "usage_amount": 27.42
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "DS",
-    "usage_amount": 859.69
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "HEC",
-    "usage_amount": 41.06
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "DS",
-    "usage_amount": 2889.45
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "HEC",
-    "usage_amount": 1320.38
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "HEC",
-    "usage_amount": 124.93
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "DS",
-    "usage_amount": 520.68
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "ENG",
-    "usage_amount": 762.18
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "UNDEFINED",
-    "usage_amount": 1398.58
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "UNDEFINED",
-    "usage_amount": 249.37
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "UNDEFINED",
-    "usage_amount": 265.41
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "ENG",
-    "usage_amount": 108.78
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "ENG",
-    "usage_amount": 1761.61
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "HEC",
-    "usage_amount": 278.11
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "ENG",
-    "usage_amount": 1038.32
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "UNDEFINED",
-    "usage_amount": 918.85
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "ENG",
-    "usage_amount": 30.26
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "HEC",
-    "usage_amount": 49.29
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "ENG",
-    "usage_amount": 46.13
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.94
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "UNDEFINED",
-    "usage_amount": 0.02
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "ENG",
-    "usage_amount": 46.85
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "HEC",
-    "usage_amount": 1.71
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "UNDEFINED",
-    "usage_amount": 2.68
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "DS",
-    "usage_amount": 24.81
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "UNDEFINED",
-    "usage_amount": 36.63
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "HEC",
-    "usage_amount": 3.78
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Apr",
-    "yyyymm": "202404",
-    "bu": "BI",
-    "usage_amount": 1.35
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "DS",
-    "usage_amount": 888.91
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "DS",
-    "usage_amount": 2923.47
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "HEC",
-    "usage_amount": 1703.24
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "DS",
-    "usage_amount": 518.07
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "UNDEFINED",
-    "usage_amount": 1303.64
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "UNDEFINED",
-    "usage_amount": 214.46
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "ENG",
-    "usage_amount": 125.13
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "ENG",
-    "usage_amount": 1848.91
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "HEC",
-    "usage_amount": 31.17
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "ENG",
-    "usage_amount": 554.63
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "ENG",
-    "usage_amount": 13.41
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "ENG",
-    "usage_amount": 46.09
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.95
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "UNDEFINED",
-    "usage_amount": 172.95
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "ENG",
-    "usage_amount": 527.62
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "UNDEFINED",
-    "usage_amount": 182.33
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Mar",
-    "yyyymm": "202403",
-    "bu": "HEC",
-    "usage_amount": 51.26
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "DS",
-    "usage_amount": 850.27
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "HEC",
-    "usage_amount": 36.33
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "DS",
-    "usage_amount": 525.29
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "DS",
-    "usage_amount": 1892.36
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "HEC",
-    "usage_amount": 1549.49
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "UNDEFINED",
-    "usage_amount": 1114.63
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 371.67
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "UNDEFINED",
-    "usage_amount": 225.84
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 193.72
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "UNDEFINED",
-    "usage_amount": 76.69
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 2240.41
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 318.78
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "HEC",
-    "usage_amount": 3.26
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 1.51
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 0.59
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "UNDEFINED",
-    "usage_amount": 154.91
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 64.26
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.69
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "DS",
-    "usage_amount": 127.22
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "HEC",
-    "usage_amount": 43.86
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "UNDEFINED",
-    "usage_amount": 9.09
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Feb",
-    "yyyymm": "202402",
-    "bu": "ENG",
-    "usage_amount": 0.63
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "DS",
-    "usage_amount": 148.79
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "DS",
-    "usage_amount": 876.86
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "HEC",
-    "usage_amount": 52.39
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "DS",
-    "usage_amount": 558.59
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "DS",
-    "usage_amount": 1750.6
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "HEC",
-    "usage_amount": 1050.94
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "ENG",
-    "usage_amount": 199.39
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "UNDEFINED",
-    "usage_amount": 240.86
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "ENG",
-    "usage_amount": 2603.18
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "UNDEFINED",
-    "usage_amount": 54.57
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "ENG",
-    "usage_amount": 111.14
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "ENG",
-    "usage_amount": 520.9
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "JOBPLAN_REPLICATION_MPT_BI_SERVICE",
-    "usage_amount": 1.78
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "UNDEFINED",
-    "usage_amount": 22.07
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "UNDEFINED",
-    "usage_amount": 173.07
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "HEC",
-    "usage_amount": 59.66
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "UNDEFINED",
-    "usage_amount": 41.21
-  },
-  {
-    "year": "2024",
-    "year_mon": "2024-Jan",
-    "yyyymm": "202401",
-    "bu": "UNDEFINED",
-    "usage_amount": 190.77
-  },
-  {
     "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 70.7
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "DS",
-    "usage_amount": 634.5
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 278.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "DS",
-    "usage_amount": 850.02
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
+    "year_mon": "2025-Sep",
+    "yyyymm": "202509",
     "bu": "UNDEFINED",
-    "usage_amount": 455.79
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 379.92
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "DS",
-    "usage_amount": 3507.03
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 1813.58
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "DS",
-    "usage_amount": 632.67
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 270.39
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 36.56
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 803.97
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "UNDEFINED",
-    "usage_amount": 1036.76
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 650.34
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "UNDEFINED",
-    "usage_amount": 515.58
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 272.27
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 1176.25
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 391.18
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "UNDEFINED",
-    "usage_amount": 152.37
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "RPT",
-    "usage_amount": 26.99
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 79.41
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "RPT",
-    "usage_amount": 25.25
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "UNDEFINED",
-    "usage_amount": 40.72
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 481.95
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "END",
-    "usage_amount": 1.16
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "UNDEFINED",
-    "usage_amount": 149.12
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "QA",
-    "usage_amount": 56.21
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 237.76
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "UNDEFINED",
-    "usage_amount": 292.76
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "BI",
-    "usage_amount": 0.49
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "BI",
-    "usage_amount": 9.95
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "ENG",
-    "usage_amount": 229.21
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "HEC",
-    "usage_amount": 2.5
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "SO",
-    "usage_amount": 18.98
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "UNDEFINED",
-    "usage_amount": 299.78
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Aug",
-    "yyyymm": "202508",
-    "bu": "DS",
-    "usage_amount": 17.31
-  },
-  {
-    "year": "2025",
-    "year_mon": "2025-Jul",
-    "yyyymm": "202507",
-    "bu": "QA",
-    "usage_amount": 1.53
+    "usage_amount": 4.72
   }
 ]

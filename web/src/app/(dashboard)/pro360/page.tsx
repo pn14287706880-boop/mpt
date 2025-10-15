@@ -49,11 +49,13 @@ import {
 } from "@/components/ui/collapsible"
 
 interface Pro360Data {
+  rowId: string
   CustomSolutionID: string
   TacticKey: string
   CampaignNickName: string
   TacticType: string
   yearmonth: string
+  ActivityDate: string
   BillingType: string
   lme: number
   nlme: number
@@ -63,12 +65,29 @@ interface Pro360Data {
   nlmpv: number
 }
 
+type Pro360ApiRow = {
+  CustomSolutionID?: string
+  TacticKey?: string
+  CampaignNickName?: string
+  TacticType?: string
+  yearmonth?: string
+  ActivityDate?: string | { value?: string }
+  BillingType?: string
+  lme?: number | string
+  nlme?: number | string
+  lmx?: number | string
+  nlmx?: number | string
+  lmpv?: number | string
+  nlmpv?: number | string
+}
+
 type DimensionKey =
   | "CustomSolutionID"
   | "TacticKey"
   | "CampaignNickName"
   | "TacticType"
   | "yearmonth"
+  | "ActivityDate"
   | "BillingType"
 
 type MeasureKey = "lme" | "nlme" | "lmx" | "nlmx" | "lmpv" | "nlmpv"
@@ -84,6 +103,7 @@ const dimensionColumns: { key: DimensionKey; name: string }[] = [
   { key: "CampaignNickName", name: "Campaign Nick Name" },
   { key: "TacticType", name: "Tactic Type" },
   { key: "yearmonth", name: "Year Month" },
+  { key: "ActivityDate", name: "Activity Date" },
   { key: "BillingType", name: "Billing Type" },
 ]
 
@@ -116,17 +136,57 @@ const createEmptyMeasureFilters = (): Record<MeasureKey, MeasureFilterValue> =>
 
 // Number formatter
 const numberFormatter = new Intl.NumberFormat("en-US")
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "short",
+  day: "2-digit",
+})
 
 const displayValue = (value: string) => (value === "" ? "—" : value)
 
-const summariseSelection = (values: string[]) => {
+function normalizeActivityDate(value: unknown): string {
+  if (typeof value === "string") return value
+  if (
+    value &&
+    typeof value === "object" &&
+    "value" in value &&
+    typeof (value as { value?: unknown }).value === "string"
+  ) {
+    return (value as { value: string }).value
+  }
+  return ""
+}
+
+const toNumber = (value: unknown): number => {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? parsed : 0
+}
+
+const formatActivityDate = (value: string) => {
+  const parts = value.split("-").map((part) => Number.parseInt(part, 10))
+  if (parts.length === 3 && parts.every((part) => Number.isFinite(part))) {
+    const [year, month, day] = parts
+    const date = new Date(year, month - 1, day)
+    return dateFormatter.format(date)
+  }
+  return displayValue(value)
+}
+
+const formatDimensionValue = (key: DimensionKey, value: string) => {
+  if (key === "ActivityDate") {
+    return formatActivityDate(value)
+  }
+  return displayValue(value)
+}
+
+const summariseSelection = (values: string[], key: DimensionKey) => {
   if (values.length <= 3) {
-    return values.map(displayValue).join(", ")
+    return values.map((value) => formatDimensionValue(key, value)).join(", ")
   }
 
   const visible = values
     .slice(0, 3)
-    .map(displayValue)
+    .map((value) => formatDimensionValue(key, value))
     .join(", ")
   return `${visible} +${values.length - 3}`
 }
@@ -161,9 +221,17 @@ function DimensionFilterDropdown({
   const [searchTerm, setSearchTerm] = useState("")
 
   const filteredOptions = useMemo(() => {
-    const lowerTerm = searchTerm.toLowerCase()
-    return options.filter((option) => option.toLowerCase().includes(lowerTerm))
-  }, [options, searchTerm])
+    const lowerTerm = searchTerm.trim().toLowerCase()
+    if (lowerTerm.length === 0) return options
+
+    return options.filter((option) => {
+      const optionLabel = formatDimensionValue(column.key, option)
+      return (
+        option.toLowerCase().includes(lowerTerm) ||
+        optionLabel.toLowerCase().includes(lowerTerm)
+      )
+    })
+  }, [column.key, options, searchTerm])
 
   const active = selectedValues.length > 0
   const labelText = active ? `${column.name} (${selectedValues.length})` : column.name
@@ -228,13 +296,14 @@ function DimensionFilterDropdown({
             {filteredOptions.length > 0 ? (
               filteredOptions.map((option) => {
                 const optionKey = option === "" ? "__EMPTY__" : option
+                const optionLabel = formatDimensionValue(column.key, option)
                 return (
                   <DropdownMenuCheckboxItem
                     key={optionKey}
                     checked={selectedValues.includes(option)}
                     onCheckedChange={(checked) => toggleValue(option, Boolean(checked))}
                   >
-                    {displayValue(option)}
+                    {optionLabel}
                   </DropdownMenuCheckboxItem>
                 )
               })
@@ -362,7 +431,9 @@ export default function Pro360Page() {
   const [filtersOpen, setFiltersOpen] = useState(true)
   const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
   const [groupByColumns, setGroupByColumns] = useState<readonly string[]>([])
-  const [selectedRows, setSelectedRows] = useState<ReadonlySet<string>>(() => new Set())
+  const [selectedRows, setSelectedRows] = useState<ReadonlySet<string>>(
+    () => new Set<string>()
+  )
   const [expandedGroupIds, setExpandedGroupIds] = useState<ReadonlySet<unknown>>(
     () => new Set<unknown>()
   )
@@ -371,7 +442,54 @@ export default function Pro360Page() {
     fetch("/data/pro360-data.json")
       .then((res) => res.json())
       .then((jsonData) => {
-        setData(jsonData)
+        const normalizedData: Pro360Data[] = Array.isArray(jsonData)
+          ? jsonData.reduce<Pro360Data[]>((acc, item, index) => {
+              if (!item || typeof item !== "object") {
+                return acc
+              }
+
+              const record = item as Pro360ApiRow
+              const customSolutionId =
+                typeof record.CustomSolutionID === "string" ? record.CustomSolutionID : ""
+              const tacticKey = typeof record.TacticKey === "string" ? record.TacticKey : ""
+              const campaignNickName =
+                typeof record.CampaignNickName === "string" ? record.CampaignNickName : ""
+              const tacticType =
+                typeof record.TacticType === "string" ? record.TacticType : ""
+              const yearmonth = typeof record.yearmonth === "string" ? record.yearmonth : ""
+              const activityDate = normalizeActivityDate(record.ActivityDate)
+              const billingType =
+                typeof record.BillingType === "string" ? record.BillingType : ""
+
+              acc.push({
+                rowId: [
+                  customSolutionId,
+                  tacticKey,
+                  activityDate,
+                  yearmonth,
+                  billingType,
+                  index,
+                ].join("|"),
+                CustomSolutionID: customSolutionId,
+                TacticKey: tacticKey,
+                CampaignNickName: campaignNickName,
+                TacticType: tacticType,
+                yearmonth,
+                ActivityDate: activityDate,
+                BillingType: billingType,
+                lme: toNumber(record.lme),
+                nlme: toNumber(record.nlme),
+                lmx: toNumber(record.lmx),
+                nlmx: toNumber(record.nlmx),
+                lmpv: toNumber(record.lmpv),
+                nlmpv: toNumber(record.nlmpv),
+              })
+
+              return acc
+            }, [])
+          : []
+
+        setData(normalizedData)
         setLoading(false)
       })
       .catch((error) => {
@@ -501,9 +619,14 @@ export default function Pro360Page() {
     (columnKey: keyof Pro360Data) => (props: RenderGroupCellProps<Pro360Data>) => {
       const groupColumnKey = groupByColumns[props.row.level]
       if (groupColumnKey !== columnKey) return null
+      const rawGroupKey = String(props.groupKey ?? "")
+      const isDimensionKey = dimensionColumns.some((column) => column.key === columnKey)
+      const formattedGroupKey = isDimensionKey
+        ? formatDimensionValue(columnKey as DimensionKey, rawGroupKey)
+        : rawGroupKey
       return renderToggleGroup({
         ...props,
-        groupKey: `${props.groupKey} (${props.childRows.length.toLocaleString()})`,
+        groupKey: `${formattedGroupKey} (${props.childRows.length.toLocaleString()})`,
       })
     },
     [groupByColumns]
@@ -551,6 +674,17 @@ export default function Pro360Page() {
         resizable: true,
         sortable: true,
         renderGroupCell: renderGroupToggleCell("yearmonth"),
+      },
+      {
+        key: "ActivityDate",
+        name: "Activity Date",
+        width: 160,
+        resizable: true,
+        sortable: true,
+        renderGroupCell: renderGroupToggleCell("ActivityDate"),
+        renderCell: ({ row }) => (
+          <span>{formatDimensionValue("ActivityDate", row.ActivityDate ?? "")}</span>
+        ),
       },
       {
         key: "BillingType",
@@ -653,9 +787,7 @@ export default function Pro360Page() {
     [columns]
   )
 
-  const rowKeyGetter = (row: Pro360Data) => {
-    return `${row.CustomSolutionID}-${row.TacticKey}-${row.yearmonth}`
-  }
+  const rowKeyGetter = (row: Pro360Data) => row.rowId
 
   const sortedRows = useMemo(() => {
     if (sortColumns.length === 0) return filteredRows
@@ -866,7 +998,7 @@ export default function Pro360Page() {
                         key={`dimension-${column.key}`}
                         className="inline-flex items-center gap-1 rounded-full border bg-background px-3 py-1 text-foreground"
                       >
-                        {column.name}: {summariseSelection(values)}
+                        {column.name}: {summariseSelection(values, column.key)}
                       </span>
                     ))}
                     {activeMeasureFilters.map(({ column, value }) => {
