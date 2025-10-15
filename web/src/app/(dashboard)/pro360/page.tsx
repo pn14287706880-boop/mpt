@@ -30,7 +30,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import { RotateCcw, Download } from "lucide-react"
+import { RotateCcw, Download, Filter, ChevronDown } from "lucide-react"
 import "react-data-grid/lib/styles.css"
 import { Input } from "@/components/ui/input"
 import {
@@ -42,6 +42,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu"
+import {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
+} from "@/components/ui/collapsible"
 
 interface Pro360Data {
   CustomSolutionID: string
@@ -199,6 +204,7 @@ function DimensionFilterDropdown({
               onChange={(event) => setSearchTerm(event.target.value)}
               placeholder={`Search ${column.name.toLowerCase()}`}
               className="h-8"
+              onKeyDown={(event) => event.stopPropagation()}
             />
           </div>
           <div className="flex justify-between px-1 text-xs text-muted-foreground">
@@ -313,6 +319,7 @@ function MeasureFilterDropdown({ column, value, onChange }: MeasureFilterDropdow
                 value={value.min ?? ""}
                 placeholder="No minimum"
                 onChange={handleMinChange}
+                onKeyDown={(event) => event.stopPropagation()}
               />
             </div>
             <div className="space-y-1">
@@ -323,6 +330,7 @@ function MeasureFilterDropdown({ column, value, onChange }: MeasureFilterDropdow
                 value={value.max ?? ""}
                 placeholder="No maximum"
                 onChange={handleMaxChange}
+                onKeyDown={(event) => event.stopPropagation()}
               />
             </div>
           </div>
@@ -351,6 +359,7 @@ export default function Pro360Page() {
   const [measureFilters, setMeasureFilters] = useState<Record<MeasureKey, MeasureFilterValue>>(
     () => createEmptyMeasureFilters()
   )
+  const [filtersOpen, setFiltersOpen] = useState(true)
   const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
   const [groupByColumns, setGroupByColumns] = useState<readonly string[]>([])
   const [selectedRows, setSelectedRows] = useState<ReadonlySet<string>>(() => new Set())
@@ -463,6 +472,7 @@ export default function Pro360Page() {
   )
 
   const hasActiveFilters = activeDimensionFilters.length > 0 || activeMeasureFilters.length > 0
+  const activeFilterCount = activeDimensionFilters.length + activeMeasureFilters.length
 
   const groupableColumns = dimensionColumns
 
@@ -778,84 +788,118 @@ export default function Pro360Page() {
         </div>
 
         {/* Filters */}
-        <div className="rounded-lg border bg-card px-4 py-4 shadow-sm space-y-4">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              Dimensions
-            </span>
-            {dimensionColumns.map((column) => (
-              <DimensionFilterDropdown
-                key={column.key}
-                column={column}
-                options={dimensionOptions[column.key] ?? []}
-                selectedValues={dimensionFilters[column.key]}
-                onChange={(values) =>
-                  setDimensionFilters((previous) => ({
-                    ...previous,
-                    [column.key]: values,
-                  }))
-                }
-              />
-            ))}
-          </div>
-          <Separator />
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              Measures
-            </span>
-            {measureColumns.map((column) => (
-              <MeasureFilterDropdown
-                key={column.key}
-                column={column}
-                value={measureFilters[column.key]}
-                onChange={(nextValue) =>
-                  setMeasureFilters((previous) => ({
-                    ...previous,
-                    [column.key]: nextValue,
-                  }))
-                }
-              />
-            ))}
-          </div>
-          {hasActiveFilters && (
-            <div className="flex flex-wrap items-center gap-2 pt-1 text-xs text-muted-foreground">
-              <span className="text-[0.65rem] font-semibold uppercase tracking-wide">Active</span>
-              {activeDimensionFilters.map(({ column, values }) => (
-                <span
-                  key={`dimension-${column.key}`}
-                  className="inline-flex items-center gap-1 rounded-full border bg-background px-3 py-1 text-foreground"
-                >
-                  {column.name}: {summariseSelection(values)}
+        <Collapsible open={filtersOpen} onOpenChange={setFiltersOpen}>
+          <div className="rounded-lg border bg-card shadow-sm">
+            <div className="flex items-center justify-between px-4 py-3">
+              <div className="flex items-center gap-2">
+                <span className="flex items-center gap-2 text-sm font-semibold">
+                  <Filter className="h-4 w-4 text-muted-foreground" />
+                  Filters
                 </span>
-              ))}
-              {activeMeasureFilters.map(({ column, value }) => {
-                const parts: string[] = []
-                if (value.min !== null) parts.push(`≥ ${numberFormatter.format(value.min)}`)
-                if (value.max !== null) parts.push(`≤ ${numberFormatter.format(value.max)}`)
-                return (
-                  <span
-                    key={`measure-${column.key}`}
-                    className="inline-flex items-center gap-1 rounded-full border bg-background px-3 py-1 text-foreground"
-                  >
-                    {column.name}: {parts.join(" • ")}
+                {activeFilterCount > 0 && (
+                  <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
+                    {activeFilterCount} active
                   </span>
-                )
-              })}
-              <Button
-                type="button"
-                variant="link"
-                size="sm"
-                className="h-auto px-0 font-semibold"
-                onClick={() => {
-                  setDimensionFilters(createEmptyDimensionFilters())
-                  setMeasureFilters(createEmptyMeasureFilters())
-                }}
-              >
-                Clear filters
-              </Button>
+                )}
+              </div>
+              <CollapsibleTrigger asChild>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="gap-1"
+                >
+                  {filtersOpen ? "Hide" : "Show"}
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${filtersOpen ? "rotate-180" : ""}`}
+                  />
+                </Button>
+              </CollapsibleTrigger>
             </div>
-          )}
-        </div>
+            <CollapsibleContent>
+              <div className="space-y-4 border-t px-4 pb-4 pt-4">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Dimensions
+                  </span>
+                  {dimensionColumns.map((column) => (
+                    <DimensionFilterDropdown
+                      key={column.key}
+                      column={column}
+                      options={dimensionOptions[column.key] ?? []}
+                      selectedValues={dimensionFilters[column.key]}
+                      onChange={(values) =>
+                        setDimensionFilters((previous) => ({
+                          ...previous,
+                          [column.key]: values,
+                        }))
+                      }
+                    />
+                  ))}
+                </div>
+                <Separator />
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Measures
+                  </span>
+                  {measureColumns.map((column) => (
+                    <MeasureFilterDropdown
+                      key={column.key}
+                      column={column}
+                      value={measureFilters[column.key]}
+                      onChange={(nextValue) =>
+                        setMeasureFilters((previous) => ({
+                          ...previous,
+                          [column.key]: nextValue,
+                        }))
+                      }
+                    />
+                  ))}
+                </div>
+                {hasActiveFilters && (
+                  <div className="flex flex-wrap items-center gap-2 pt-1 text-xs text-muted-foreground">
+                    <span className="text-[0.65rem] font-semibold uppercase tracking-wide">
+                      Active
+                    </span>
+                    {activeDimensionFilters.map(({ column, values }) => (
+                      <span
+                        key={`dimension-${column.key}`}
+                        className="inline-flex items-center gap-1 rounded-full border bg-background px-3 py-1 text-foreground"
+                      >
+                        {column.name}: {summariseSelection(values)}
+                      </span>
+                    ))}
+                    {activeMeasureFilters.map(({ column, value }) => {
+                      const parts: string[] = []
+                      if (value.min !== null) parts.push(`≥ ${numberFormatter.format(value.min)}`)
+                      if (value.max !== null) parts.push(`≤ ${numberFormatter.format(value.max)}`)
+                      return (
+                        <span
+                          key={`measure-${column.key}`}
+                          className="inline-flex items-center gap-1 rounded-full border bg-background px-3 py-1 text-foreground"
+                        >
+                          {column.name}: {parts.join(" • ")}
+                        </span>
+                      )
+                    })}
+                    <Button
+                      type="button"
+                      variant="link"
+                      size="sm"
+                      className="h-auto px-0 font-semibold"
+                      onClick={() => {
+                        setDimensionFilters(createEmptyDimensionFilters())
+                        setMeasureFilters(createEmptyMeasureFilters())
+                      }}
+                    >
+                      Clear filters
+                    </Button>
+                  </div>
+                )}
+              </div>
+            </CollapsibleContent>
+          </div>
+        </Collapsible>
 
         {/* Group By Controls */}
         <div className="rounded-lg border bg-card px-4 py-3 shadow-sm">
