@@ -302,6 +302,7 @@ function DimensionFilterDropdown({
                     key={optionKey}
                     checked={selectedValues.includes(option)}
                     onCheckedChange={(checked) => toggleValue(option, Boolean(checked))}
+                    onSelect={(event) => event.preventDefault()}
                   >
                     {optionLabel}
                   </DropdownMenuCheckboxItem>
