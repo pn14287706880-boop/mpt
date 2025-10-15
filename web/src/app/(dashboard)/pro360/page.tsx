@@ -30,7 +30,14 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import { RotateCcw, Download, Filter, ChevronDown } from "lucide-react"
+import {
+  RotateCcw,
+  Download,
+  Filter,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react"
 import "react-data-grid/lib/styles.css"
 import { Input } from "@/components/ui/input"
 import {
@@ -47,6 +54,7 @@ import {
   CollapsibleTrigger,
   CollapsibleContent,
 } from "@/components/ui/collapsible"
+import { cn } from "@/lib/utils"
 
 interface Pro360Data {
   rowId: string
@@ -141,6 +149,11 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
   month: "short",
   day: "2-digit",
 })
+const monthDisplayFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  year: "numeric",
+})
+const weekdayLabels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
 const displayValue = (value: string) => (value === "" ? "—" : value)
 
@@ -189,6 +202,57 @@ const summariseSelection = (values: string[], key: DimensionKey) => {
     .map((value) => formatDimensionValue(key, value))
     .join(", ")
   return `${visible} +${values.length - 3}`
+}
+
+const dateValuePattern = /^(\d{4})-(\d{2})-(\d{2})$/
+
+function parseDateValue(value: string): Date | null {
+  if (!value) return null
+  const match = dateValuePattern.exec(value)
+  if (!match) return null
+  const [, year, month, day] = match
+  const y = Number.parseInt(year, 10)
+  const m = Number.parseInt(month, 10) - 1
+  const d = Number.parseInt(day, 10)
+  if (!Number.isFinite(y) || !Number.isFinite(m) || !Number.isFinite(d)) return null
+  const date = new Date(y, m, d)
+  if (
+    Number.isNaN(date.getTime()) ||
+    date.getFullYear() !== y ||
+    date.getMonth() !== m ||
+    date.getDate() !== d
+  ) {
+    return null
+  }
+  return date
+}
+
+function formatDateValue(date: Date): string {
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, "0")
+  const day = String(date.getDate()).padStart(2, "0")
+  return `${year}-${month}-${day}`
+}
+
+function startOfMonthDate(date: Date): Date {
+  return new Date(date.getFullYear(), date.getMonth(), 1)
+}
+
+function addMonths(date: Date, months: number): Date {
+  return new Date(date.getFullYear(), date.getMonth() + months, 1)
+}
+
+function isSameDay(a: Date, b: Date): boolean {
+  return (
+    a.getFullYear() === b.getFullYear() &&
+    a.getMonth() === b.getMonth() &&
+    a.getDate() === b.getDate()
+  )
+}
+
+function isWithinRange(date: Date, start: Date, end: Date) {
+  const time = date.getTime()
+  return time >= start.getTime() && time <= end.getTime()
 }
 
 // Custom filter function
@@ -311,6 +375,382 @@ function DimensionFilterDropdown({
             ) : (
               <DropdownMenuItem disabled>No matches found</DropdownMenuItem>
             )}
+          </div>
+        </div>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
+
+function ActivityDateFilterDropdown({
+  column,
+  options,
+  selectedValues,
+  onChange,
+}: DimensionFilterDropdownProps) {
+  type DateRange = { start: Date | null; end: Date | null }
+
+  const [open, setOpen] = useState(false)
+
+  const parsedOptions = useMemo(
+    () =>
+      options
+        .map((value) => {
+          const parsed = parseDateValue(value)
+          return parsed ? { raw: value, date: parsed } : null
+        })
+        .filter(
+          (item): item is { raw: string; date: Date } => item !== null
+        )
+        .sort((a, b) => a.date.getTime() - b.date.getTime()),
+    [options]
+  )
+
+  const minDate = parsedOptions[0]?.date ?? null
+  const maxDate = parsedOptions[parsedOptions.length - 1]?.date ?? null
+
+  const selectedRange = useMemo<DateRange>(() => {
+    if (selectedValues.length === 0) {
+      return { start: null, end: null }
+    }
+
+    const parsed = selectedValues
+      .map((value) => parseDateValue(value))
+      .filter((value): value is Date => value !== null)
+      .sort((a, b) => a.getTime() - b.getTime())
+
+    if (parsed.length === 0) {
+      return { start: null, end: null }
+    }
+
+    const start = new Date(parsed[0].getFullYear(), parsed[0].getMonth(), parsed[0].getDate())
+    const endValue = parsed[parsed.length - 1]
+    const end = new Date(endValue.getFullYear(), endValue.getMonth(), endValue.getDate())
+
+    return { start, end }
+  }, [selectedValues])
+
+  const [pendingRange, setPendingRange] = useState<DateRange>(() => ({
+    start: selectedRange.start ? new Date(selectedRange.start) : null,
+    end: selectedRange.end ? new Date(selectedRange.end) : null,
+  }))
+
+  const [currentMonth, setCurrentMonth] = useState<Date>(() =>
+    startOfMonthDate(
+      selectedRange.end ??
+        selectedRange.start ??
+        maxDate ??
+        minDate ??
+        new Date()
+    )
+  )
+
+  useEffect(() => {
+    if (!open) return
+
+    const refreshedRange: DateRange = {
+      start: selectedRange.start ? new Date(selectedRange.start) : null,
+      end: selectedRange.end ? new Date(selectedRange.end) : null,
+    }
+    setPendingRange(refreshedRange)
+
+    const initialMonthSource =
+      refreshedRange.end ??
+      refreshedRange.start ??
+      maxDate ??
+      minDate ??
+      new Date()
+    setCurrentMonth(startOfMonthDate(initialMonthSource))
+  }, [open, selectedRange, minDate, maxDate])
+
+  const buttonLabel = (() => {
+    if (!selectedRange.start || !selectedRange.end) {
+      return column.name
+    }
+
+    const startValue = formatDateValue(selectedRange.start)
+    const endValue = formatDateValue(selectedRange.end)
+    const startLabel = formatActivityDate(startValue)
+    const endLabel = formatActivityDate(endValue)
+
+    if (startValue === endValue) {
+      return `${column.name}: ${startLabel}`
+    }
+
+    return `${column.name}: ${startLabel} → ${endLabel}`
+  })()
+
+  const clampToAvailableDate = useCallback(
+    (date: Date) => {
+      if (minDate && date.getTime() < minDate.getTime()) {
+        return new Date(minDate)
+      }
+      if (maxDate && date.getTime() > maxDate.getTime()) {
+        return new Date(maxDate)
+      }
+      return new Date(date.getFullYear(), date.getMonth(), date.getDate())
+    },
+    [minDate, maxDate]
+  )
+
+  const handleDaySelect = useCallback(
+    (day: Date) => {
+      const clamped = clampToAvailableDate(day)
+      setPendingRange((previous) => {
+        if (!previous.start || previous.end) {
+          return { start: clamped, end: null }
+        }
+
+        if (isSameDay(clamped, previous.start)) {
+          return { start: clamped, end: clamped }
+        }
+
+        if (clamped.getTime() < previous.start.getTime()) {
+          return { start: clamped, end: null }
+        }
+
+        return { start: previous.start, end: clamped }
+      })
+    },
+    [clampToAvailableDate]
+  )
+
+  const handleApply = () => {
+    if (!pendingRange.start || !pendingRange.end) return
+
+    const startTime = pendingRange.start.getTime()
+    const endTime = pendingRange.end.getTime()
+
+    const nextValues = parsedOptions
+      .filter((option) => {
+        const time = option.date.getTime()
+        return time >= startTime && time <= endTime
+      })
+      .map((option) => option.raw)
+
+    onChange(nextValues)
+    setOpen(false)
+  }
+
+  const handleClear = () => {
+    setPendingRange({ start: null, end: null })
+    onChange([])
+    setOpen(false)
+  }
+
+  const handleSelectAll = () => {
+    if (parsedOptions.length === 0) return
+    onChange(parsedOptions.map((option) => option.raw))
+    setOpen(false)
+  }
+
+  const pendingSummary = (() => {
+    if (pendingRange.start && pendingRange.end) {
+      const startValue = formatDateValue(pendingRange.start)
+      const endValue = formatDateValue(pendingRange.end)
+      const sameDay = isSameDay(pendingRange.start, pendingRange.end)
+      const formattedStart = formatActivityDate(startValue)
+      const formattedEnd = formatActivityDate(endValue)
+      if (sameDay) {
+        return formattedStart
+      }
+      return `${formattedStart} → ${formattedEnd}`
+    }
+    if (pendingRange.start && !pendingRange.end) {
+      return "Select an end date"
+    }
+    return "No dates selected"
+  })()
+
+  const pendingRangeLength =
+    pendingRange.start && pendingRange.end
+      ? Math.floor(
+          (pendingRange.end.getTime() - pendingRange.start.getTime()) /
+            (24 * 60 * 60 * 1000)
+        ) + 1
+      : 0
+
+  const displayMonths = [
+    currentMonth,
+    addMonths(currentMonth, 1),
+  ] as const
+
+  const renderMonthGrid = (monthDate: Date) => {
+    const firstOfMonth = startOfMonthDate(monthDate)
+    const firstDayOfWeek = firstOfMonth.getDay()
+    const gridStart = new Date(firstOfMonth)
+    gridStart.setDate(firstOfMonth.getDate() - firstDayOfWeek)
+
+    return Array.from({ length: 42 }, (_, index) => {
+      const day = new Date(gridStart)
+      day.setDate(gridStart.getDate() + index)
+
+      const dayTime = day.getTime()
+      const isOutsideMonth = day.getMonth() !== monthDate.getMonth()
+      const isBeforeMin = minDate ? dayTime < minDate.getTime() : false
+      const isAfterMax = maxDate ? dayTime > maxDate.getTime() : false
+      const disabled = isBeforeMin || isAfterMax
+
+      const isStart =
+        pendingRange.start !== null && isSameDay(day, pendingRange.start)
+      const isEnd =
+        pendingRange.end !== null && isSameDay(day, pendingRange.end)
+      const isBetween =
+        pendingRange.start &&
+        pendingRange.end &&
+        isWithinRange(day, pendingRange.start, pendingRange.end) &&
+        !isStart &&
+        !isEnd
+
+      return (
+        <button
+          key={`${monthDate.getTime()}-${day.getTime()}`}
+          type="button"
+          onClick={() => handleDaySelect(day)}
+          disabled={disabled}
+          className={cn(
+            "flex h-9 w-9 items-center justify-center rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/70",
+            disabled
+              ? "cursor-not-allowed opacity-40"
+              : "cursor-pointer hover:bg-primary/10",
+            isOutsideMonth && "text-muted-foreground/60",
+            isBetween && "bg-primary/10 text-primary",
+            (isStart || isEnd) && "bg-primary text-primary-foreground hover:bg-primary",
+            !isStart && !isEnd && !isBetween && !disabled && "text-foreground"
+          )}
+        >
+          {day.getDate()}
+        </button>
+      )
+    })
+  }
+
+  const canApply = Boolean(
+    pendingRange.start &&
+      pendingRange.end &&
+      pendingRange.start.getTime() <= pendingRange.end.getTime()
+  )
+
+  return (
+    <DropdownMenu open={open} onOpenChange={setOpen}>
+      <DropdownMenuTrigger asChild>
+        <Button
+          variant={selectedValues.length > 0 ? "default" : "outline"}
+          size="sm"
+          className="min-w-[220px] justify-between"
+        >
+          <span className="truncate">{buttonLabel}</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent
+        align="start"
+        className="w-[480px] p-4"
+        onCloseAutoFocus={(event) => event.preventDefault()}
+      >
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-semibold">{column.name}</span>
+            <div className="flex items-center gap-2">
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                className="h-8 w-8"
+                onClick={() =>
+                  setCurrentMonth((previous) => addMonths(previous, -1))
+                }
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+              <span className="text-sm font-medium">
+                {monthDisplayFormatter.format(currentMonth)}
+              </span>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                className="h-8 w-8"
+                onClick={() =>
+                  setCurrentMonth((previous) => addMonths(previous, 1))
+                }
+              >
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            {displayMonths.map((monthDate) => (
+              <div key={monthDate.getTime()} className="space-y-2">
+                <div className="text-center text-sm font-medium">
+                  {monthDisplayFormatter.format(monthDate)}
+                </div>
+                <div className="grid grid-cols-7 gap-1 text-xs text-muted-foreground">
+                  {weekdayLabels.map((label) => (
+                    <div
+                      key={label}
+                      className="h-6 w-9 text-center leading-6"
+                    >
+                      {label}
+                    </div>
+                  ))}
+                </div>
+                <div className="grid grid-cols-7 gap-1">
+                  {renderMonthGrid(monthDate)}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex items-center justify-between rounded-md border px-3 py-2 text-xs">
+            <div className="flex flex-col">
+              <span className="font-medium text-foreground">{pendingSummary}</span>
+              {pendingRangeLength > 0 && (
+                <span className="text-muted-foreground">
+                  {pendingRangeLength.toLocaleString()} day
+                  {pendingRangeLength === 1 ? "" : "s"} selected
+                </span>
+              )}
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={handleSelectAll}
+                disabled={parsedOptions.length === 0}
+              >
+                Select full range
+              </Button>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={handleClear}
+                disabled={!selectedRange.start && !selectedRange.end}
+              >
+                Clear
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex justify-end gap-2">
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={() => setOpen(false)}
+            >
+              Cancel
+            </Button>
+            <Button
+              type="button"
+              size="sm"
+              disabled={!canApply}
+              onClick={handleApply}
+            >
+              Apply
+            </Button>
           </div>
         </div>
       </DropdownMenuContent>
@@ -955,20 +1395,27 @@ export default function Pro360Page() {
                   <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                     Dimensions
                   </span>
-                  {dimensionColumns.map((column) => (
-                    <DimensionFilterDropdown
-                      key={column.key}
-                      column={column}
-                      options={dimensionOptions[column.key] ?? []}
-                      selectedValues={dimensionFilters[column.key]}
-                      onChange={(values) =>
-                        setDimensionFilters((previous) => ({
-                          ...previous,
-                          [column.key]: values,
-                        }))
-                      }
-                    />
-                  ))}
+                  {dimensionColumns.map((column) => {
+                    const FilterComponent =
+                      column.key === "ActivityDate"
+                        ? ActivityDateFilterDropdown
+                        : DimensionFilterDropdown
+
+                    return (
+                      <FilterComponent
+                        key={column.key}
+                        column={column}
+                        options={dimensionOptions[column.key] ?? []}
+                        selectedValues={dimensionFilters[column.key]}
+                        onChange={(values) =>
+                          setDimensionFilters((previous) => ({
+                            ...previous,
+                            [column.key]: values,
+                          }))
+                        }
+                      />
+                    )
+                  })}
                 </div>
                 <Separator />
                 <div className="flex flex-wrap items-center gap-3">
