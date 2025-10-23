@@ -54,7 +54,9 @@ export async function createSession(userId: string) {
     value: sessionToken,
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    // Only use secure cookies if HTTPS is available
+    // Internal servers on HTTP (like :8501) should use secure: false
+    secure: process.env.FORCE_SECURE_COOKIES === "true" || false,
     path: "/",
     expires: expiresAt,
   });
