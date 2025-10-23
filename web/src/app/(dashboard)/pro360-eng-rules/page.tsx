@@ -19,6 +19,12 @@ import { DataGrid, type Column, SelectColumn } from "react-data-grid"
 import "react-data-grid/lib/styles.css"
 import { EngRulesForm } from "@/components/pro360-eng-rules/EngRulesForm"
 import { useToast } from "@/hooks/use-toast"
+import { 
+  getRulesAction, 
+  toggleActiveAction, 
+  deleteRuleAction,
+  type EngRule as ServerEngRule 
+} from "@/actions/pro360-eng-rules"
 
 interface EngRule {
   id: string
@@ -61,25 +67,27 @@ export default function Pro360EngRulesPage() {
   const fetchRules = useCallback(async () => {
     setLoading(true)
     try {
-      const params = new URLSearchParams()
-      if (showHistory) {
-        params.set("history", "true")
-      } else {
-        params.set("latest", "true")
-        if (showOnlyActive) {
-          params.set("active", "true")
-        }
-      }
-
-      const response = await fetch(`/api/pro360-eng-rules?${params}`)
-      if (!response.ok) throw new Error("Failed to fetch rules")
+      const rules = await getRulesAction({
+        showHistory,
+        onlyActive: showOnlyActive,
+        onlyLatest: !showHistory,
+      })
       
-      const rules = await response.json()
-      setData(rules)
-    } catch {
+      // Convert Date objects to strings for display
+      const formattedRules: EngRule[] = rules.map(rule => ({
+        ...rule,
+        validFrom: rule.validFrom.toISOString(),
+        validTo: rule.validTo ? rule.validTo.toISOString() : null,
+        createdAt: rule.createdAt.toISOString(),
+        updatedAt: rule.updatedAt.toISOString(),
+        inactivatedAt: rule.inactivatedAt ? rule.inactivatedAt.toISOString() : null,
+      }))
+      
+      setData(formattedRules)
+    } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to fetch rules",
+        description: error instanceof Error ? error.message : "Failed to fetch rules",
         variant: "destructive",
       })
     } finally {
@@ -126,16 +134,10 @@ export default function Pro360EngRulesPage() {
     }
 
     try {
-      const response = await fetch("/api/pro360-eng-rules/toggle-active", {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          eventName: rule.eventName,
-          isActive: rule.isActive === 1 ? 0 : 1,
-        }),
+      await toggleActiveAction({
+        eventName: rule.eventName,
+        isActive: rule.isActive === 1 ? 0 : 1,
       })
-
-      if (!response.ok) throw new Error("Failed to toggle status")
 
       toast({
         title: "Success",
@@ -144,10 +146,10 @@ export default function Pro360EngRulesPage() {
 
       fetchRules()
       setSelectedRows(new Set())
-    } catch {
+    } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to toggle rule status",
+        description: error instanceof Error ? error.message : "Failed to toggle rule status",
         variant: "destructive",
       })
     }
@@ -174,12 +176,7 @@ export default function Pro360EngRulesPage() {
     }
 
     try {
-      const response = await fetch(
-        `/api/pro360-eng-rules?eventName=${encodeURIComponent(rule.eventName)}`,
-        { method: "DELETE" }
-      )
-
-      if (!response.ok) throw new Error("Failed to delete rule")
+      await deleteRuleAction(rule.eventName)
 
       toast({
         title: "Success",
@@ -188,10 +185,10 @@ export default function Pro360EngRulesPage() {
 
       fetchRules()
       setSelectedRows(new Set())
-    } catch {
+    } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to delete rule",
+        description: error instanceof Error ? error.message : "Failed to delete rule",
         variant: "destructive",
       })
     }

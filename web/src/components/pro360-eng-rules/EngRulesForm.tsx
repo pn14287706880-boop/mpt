@@ -20,6 +20,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { useToast } from "@/hooks/use-toast"
+import { createRuleAction, updateRuleAction } from "@/actions/pro360-eng-rules"
 
 interface EngRule {
   id: string
@@ -82,27 +83,22 @@ export function EngRulesForm({
     setLoading(true)
 
     try {
-      const endpoint = "/api/pro360-eng-rules"
-      const method = isEditMode ? "PUT" : "POST"
-
-      const response = await fetch(endpoint, {
-        method,
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-
-      const data = await response.json()
-
-      if (!response.ok) {
-        throw new Error(data.error || "Failed to save rule")
+      const params = {
+        eventName: formData.eventName,
+        billingType: formData.billingType,
+        tacticField: formData.tacticField || null,
+        isEngagement: formData.isEngagement,
+        isExposure: formData.isExposure,
       }
+
+      const result = isEditMode 
+        ? await updateRuleAction(params)
+        : await createRuleAction(params)
 
       toast({
         title: isEditMode ? "Rule Updated" : "Rule Created",
         description: isEditMode
-          ? `Successfully created version ${data.version} of ${formData.eventName}`
+          ? `Successfully created version ${result.version} of ${formData.eventName}`
           : `Successfully created ${formData.eventName}`,
       })
 

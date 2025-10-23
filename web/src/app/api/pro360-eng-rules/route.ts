@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getCurrentUser } from "@/lib/auth/session";
 
+// Force Node.js runtime for Prisma compatibility
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 // GET: Fetch rules with optional filters
 export async function GET(request: NextRequest) {
   try {

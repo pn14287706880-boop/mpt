@@ -9,11 +9,10 @@ export default async function DashboardLayout({
 }: {
   children: React.ReactNode
 }) {
-  // TODO: Re-enable authentication when database is accessible
-  // const user = await getCurrentUser()
-  // if (!user) {
-  //   redirect("/login")
-  // }
+  const user = await getCurrentUser()
+  if (!user) {
+    redirect("/login")
+  }
 
   return (
     <SidebarProvider>

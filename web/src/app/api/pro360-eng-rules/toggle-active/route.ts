@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getCurrentUser } from "@/lib/auth/session";
 
+// Force Node.js runtime for Prisma compatibility
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 // PATCH: Toggle isActive status without creating a new version
 export async function PATCH(request: NextRequest) {
   try {
